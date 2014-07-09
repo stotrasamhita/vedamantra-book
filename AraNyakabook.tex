@@ -1,0 +1,25 @@
+% !TeX program = XeLaTeX
+% !TeX root = AraNyakabook.tex
+\documentclass[a5paper,twoside,12pt]{book}
+\input{preamble}
+\begin{document}
+\newcommand{\titletext}{तैत्तिरीय\linebreak\mbox{}\linebreak आरण्यकम्}
+\input{frontmatter}
+
+
+\renewcommand{\partname}{विभागः}
+\renewcommand{\thepart}{{\dndigit{\arabic{part}}}}
+\Large
+\setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
+%\setmainfont[Script=Devanagari,Mapping=tex-text,FakeStretch=1.08]{Sanskrit 2003}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Chandas}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
+\fontsize{18pt}{22pt}\selectfont
+%The following alters word spacing to ensure that words aren't too close to one another!
+\spaceskip=1\fontdimen2\font plus 1\fontdimen3\font minus 1.25\fontdimen4\font
+\input{aranyakas}
+\newpage\mbox{}
+\clearemptydoublepage
+%\mbox{}\clearemptydoublepage
+\end{document}
