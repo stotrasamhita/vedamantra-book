@@ -5,7 +5,10 @@
 \setlength{\parindent}{0pt}
 \renewcommand{\sect}[1]{\chapter[#1]{॥#1॥}}
 \setlength{\emergencystretch}{3em}
-
+\newcounter{anuvakam}
+\newcommand{\anuvakamend}{\refstepcounter{anuvakam}\\[-0.8ex]
+\rule[0.5ex]{0.93\textwidth}{1.5pt}\bfseries{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
+}
 %\chapt{॥तैत्तिरीय आरण्यकम्॥}
-\input{"aranyakas/aruNaprashnaH.tex"}
-\input{"aranyakas/kAThaka.tex"}
+\input{"aranyakas/ArunaPrashnah.tex"}
+\input{"aranyakas/Kathaka.tex"}
