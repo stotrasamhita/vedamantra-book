@@ -1,0 +1,95 @@
+\documentclass[a5paper,twoside,12pt]{book}
+\usepackage{shloka}
+
+%%% PAGE SIZE and MARGINS %%%
+\usepackage[top=1.5cm, bottom=1.8cm, left=1.5cm, right=1.5cm]{geometry}
+\setmainfont[Script=Devanagari]{Sanskrit 2003}
+
+%%% HEADERS and FOOTERS %%%
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\setlength{\headheight}{28pt}
+\lhead[\fancyplain{}{\pagenumfont\large\thepage}]
+   {\fancyplain{}{\leftmark}}
+\rhead[\fancyplain{}{\leftmark}]
+   {\fancyplain{}{\pagenumfont\large\thepage}}
+\cfoot{}
+
+\fancypagestyle{fancyplain}{ %
+\fancyhf{} % remove everything
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+\renewcommand{\footrulewidth}{0pt}
+\cfoot{\pagenumfont\large\thepage}}
+
+%%% SECTIONS and CHAPTERS %%%
+\makeatletter
+\renewcommand\section{\resetShloka\@startsection {section}{1}{\z@}%
+%{2.3ex \@plus.2ex}%
+%{-3.5ex \@plus -1ex \@minus -.2ex}%
+%{2.3ex \@plus.2ex}%
+{10pt}
+{2pt}
+{\centering\normalfont\LARGE\bfseries}}
+
+\renewcommand\chapter{\resetShloka\@startsection {chapter}{1}{\z@}%
+{10pt}
+{2pt}
+{\normalfont\LARGE\bfseries\filcenter}}
+\makeatother
+
+\setcounter{secnumdepth}{-1}
+%for weird reasons this does not bookmark the section start, but the start of text in the section!!!
+%\renewcommand\thesection{}
+\renewcommand{\sectionmark}[1]{%
+\markboth{\large #1}{}}
+\renewcommand{\subsectionmark}[1]{%
+\markboth{\large #1}{}}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\large #1}{}}
+
+\addtolength{\parskip}{4pt}
+%\addtolength{\headsep}{10pt}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{30pt}
+\setlength{\parindent}{0pt}
+
+%%% HYPERLINKS %%%
+\usepackage[bookmarks=true,bookmarksopen=true,xetex,colorlinks=true,
+linkcolor=black,			% colour of internal links
+citecolor=cyan,				% colour of links to bibliography
+filecolor=magenta,			% colour of file links
+urlcolor=blue				% colour of external links
+]{hyperref}
+
+%%% MISCELLANEOUS %%%
+\hbadness=10000
+\vbadness=10000
+%\listfiles
+
+\newcommand{\ar}{\char"0930\char"094D\char"E009}
+\newcommand{\ur}{\char"0930\char"094D\char"200C}
+\newcommand{\sr}{\char"0930\char"094D\char"E007}
+\newcommand{\sn}{\char"0928\char"094D\char"E007}
+\newcommand{\snn}{\char"0928\char"094D\char"0928\char"094D\char"E007}
+\newcommand{\an}{\char"0928\char"094D\char"E009}
+\newcommand{\aav}{\char"093D\char"E009}
+\newcommand{\sav}{\char"093D\char"E007}
+\newcommand{\sG}{\char"0919\char"094D\char"E007}
+\begin{document}
+\Large\setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
+%\setmainfont[Script=Devanagari,Mapping=tex-text,FakeStretch=1.08]{Sanskrit 2003}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Chandas}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
+\fontsize{18pt}{22pt}\selectfont
+%The following alters word spacing to ensure that words aren't too close to one another!
+\spaceskip=1\fontdimen2\font plus 1\fontdimen3\font minus 1.25\fontdimen4\font
+\input{"FPATH"}
+\vfill
+\hrule
+\footnotesize
+\urlstyle{sf}
+\textsf{%
+\noindent GitHub: \url{http://github.com/stotrasamhita/vedamantra-book}\\[0.7ex]
+Credits: \url{http://stotrasamhita.net/wiki/StotraSamhita:About}}
+\end{document}
