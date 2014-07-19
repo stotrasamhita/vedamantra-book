@@ -90,3 +90,7 @@ sympy-plots-for-*.tex/
 
 #ITRANS source files
 *.itx
+
+#VIM temp
+*.swp
+*~
