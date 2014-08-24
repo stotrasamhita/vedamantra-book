@@ -31,7 +31,7 @@
 {2pt}
 {\centering\normalfont\LARGE\bfseries}}
 
-\renewcommand\chapter{\resetShloka\@startsection {chapter}{1}{\z@}%
+\renewcommand\chapter{\ifbool{kindle}{\newpage}{}\resetShloka\@startsection {chapter}{1}{\z@}%
 {10pt}
 {2pt}
 {\normalfont\LARGE\bfseries\filcenter}}
