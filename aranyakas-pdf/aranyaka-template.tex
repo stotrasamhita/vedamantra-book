@@ -86,9 +86,12 @@ urlcolor=blue				% colour of external links
 \setlength{\parindent}{0pt}
 \setlength{\emergencystretch}{3em}
 \renewcommand{\sect}[1]{\chapter[#1]{॥#1॥}}
+\makeatletter
+  \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
 \newcounter{anuvakam}
-\newcommand{\anuvakamend}{\refstepcounter{anuvakam}\\[-0.8ex]
-\rule[0.5ex]{0.93\textwidth}{1.5pt}\bfseries{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
+\newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
+\newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\footnotesize #1॥\devanumber{\arabic{anuvakam}}॥}}\vhrulefill{3pt}\bfseries{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
 }
 \input{"FPATH"}
 \vfill
