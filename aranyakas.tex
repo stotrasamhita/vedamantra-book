@@ -3,13 +3,17 @@
 \setcounter{page}{0}
 \pagenumbering{arabic}
 \setlength{\parindent}{0pt}
-\renewcommand{\sect}[1]{\chapter[#1]{॥#1॥}}
+%\renewcommand{\sect}[1]{\chapter[#1]{॥#1॥}}
 \setlength{\emergencystretch}{3em}
+\makeatletter
+  \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
 \newcounter{anuvakam}
-\newcommand{\anuvakamend}{\refstepcounter{anuvakam}\\[-0.8ex]
-\rule[0.5ex]{0.93\textwidth}{1.5pt}\bfseries{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
+\newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
+\newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\footnotesize #1॥\devanumber{\arabic{anuvakam}}॥}}\vhrulefill{3pt}\bfseries{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
 }
 %\chapt{॥तैत्तिरीय आरण्यकम्॥}
 \input{"aranyakas/ArunaPrashnah.tex"}\clearpage
 \input{"aranyakas/SahaVai.tex"}\clearpage
+\input{"aranyakas/Chittissruk.tex"}\clearpage
 \input{"aranyakas/Kathaka.tex"}
