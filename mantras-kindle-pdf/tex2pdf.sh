@@ -7,7 +7,7 @@ echo "File path         : $fpath"
 jobname=`echo $fpath | sed 's/.tex//;s@.*mantras/@@'`
 echo "PDF target        : $jobname.pdf"
 mkdir -p `dirname $jobname`
-if [[ $fpath -nt $jobname.pdf ]]
+if [[ $fpath -nt $jobname.pdf || mantra-kindle-template.tex -nt $jobname.pdf ]]
 then
 echo Rebuilding $jobname.pdf... > /dev/stderr
 echo Rebuilding $jobname.pdf...

@@ -7,7 +7,7 @@ echo "File path         : $fpath"
 jobname=`echo $fpath | sed 's/.tex//;s@.*aranyakas/@@'`
 echo "PDF target        : $jobname.pdf"
 mkdir -p `dirname $jobname`
-if [[ $fpath -nt $jobname.pdf ]]
+if [[ $fpath -nt $jobname.pdf || aranyaka-kindle-template.tex -nt $jobname.pdf ]]
 then
 echo Rebuilding $jobname.pdf... > /dev/stderr
 echo Rebuilding $jobname.pdf...
