@@ -94,3 +94,8 @@ sympy-plots-for-*.tex/
 #VIM temp
 *.swp
 *~
+
+#Drafts
+mantras-pdf/*Draft.pdf
+mantras-kindle-pdf/*Draft.pdf
+mantras/*Draft.tex
