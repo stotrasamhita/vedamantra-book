@@ -12,4 +12,5 @@
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
 \newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\footnotesize #1॥\devanumber{\arabic{anuvakam}}॥}}\vhrulefill{3pt}\bfseries{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
 }
-\input{"brahmanam_ashtakam/Ashtakams-new.tex"}
+\newcommand{\prashnaend}[5]{#1\\#2\\#3\\#4\\#5}
+\input{"brahmanam_ashtakam/Ashtakams.tex"}
