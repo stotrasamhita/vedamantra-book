@@ -89,7 +89,12 @@ urlcolor=blue				% colour of external links
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
 \newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\footnotesize #1॥\devanumber{\arabic{anuvakam}}॥}}\vhrulefill{3pt}{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
 }
-\newcommand{\prashnaend}[5]{#1\\#2\\#3\\#4\\#5}
+\newcommand{\prashnaend}[5]{\fontsize{12pt}{15pt}\selectfont
+{#1}\\#2\\#3%
+\fontsize{19pt}{23pt}\selectfont
+\begin{center}
+#4\\॥#5
+\end{center}}
 \chapt{तैत्तिरीय ब्राह्मणम्}
 \input{"FPATH"}
 \vfill

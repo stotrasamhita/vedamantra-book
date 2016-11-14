@@ -1,5 +1,4 @@
 % !TeX program = XeLaTeX
-% !TeX root = BrahmanamBook.tex
 \setcounter{page}{0}
 \pagenumbering{arabic}
 \setlength{\parindent}{0pt}
@@ -12,5 +11,10 @@
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
 \newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\footnotesize #1॥\devanumber{\arabic{anuvakam}}॥}}\vhrulefill{3pt}\bfseries{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
 }
-\newcommand{\prashnaend}[5]{#1\\#2\\#3\\#4\\#5}
+\newcommand{\prashnaend}[5]{\fontsize{12pt}{15pt}\selectfont
+{#1}\\#2\\#3%
+\fontsize{19pt}{23pt}\selectfont
+\begin{center}
+#4\\॥#5
+\end{center}}
 \input{"ashtakas/TaittiriyaBrahmanam-Ashtakams.tex"}
