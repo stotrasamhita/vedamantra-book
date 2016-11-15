@@ -1,0 +1,352 @@
+%% Style file
+%\newif\@ifvsp
+%\@ifvsp=true
+\newdimen\@tempdima
+\newdimen\@tempdimb
+\newdimen\shlokaspaceskip
+\shlokaspaceskip=24pt
+\newdimen\shlokavskip
+\shlokavskip=0pt
+\newbox\@tempboxa
+\newbox\@tempboxb
+\newbox\@tempboxc
+\newbox\@tempboxd
+
+\RequirePackage[no-math]{fontspec}
+\defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
+\RequirePackage{pdfpages}
+\RequirePackage{xunicode}
+\RequirePackage{xltxtra}
+\RequirePackage{titlesec}
+\RequirePackage{multicol}
+
+
+\newcommand{\pagenumfont}{\fontspec{Candara}}
+
+\RequirePackage[titles]{tocloft}
+\renewcommand\contentsname{अनुक्रमणिका}
+\renewcommand{\partname}{विभागः}
+\renewcommand{\thepart}{{\dndigit{\arabic{part}}}}
+\renewcommand{\cftchappagefont}{\fontspec{Candara Bold}}
+\renewcommand{\cftpartpagefont}{\fontspec{Candara Bold}}
+\renewcommand{\cftsecpagefont}{\fontspec{Candara}}
+\renewcommand{\cftpartfont}{\LARGE\fontspec[Script=Devanagari]{Sanskrit 2003}}
+\renewcommand{\cftchapfont}{\Large\fontspec[Script=Devanagari]{Sanskrit 2003}}
+\renewcommand{\cftsecfont}{\fontspec[Script=Devanagari]{Sanskrit 2003}}
+\renewcommand{\cfttoctitlefont}{\LARGE\fontspec[Script=Devanagari]{Sanskrit 2003}}
+%\newcommand{\s}{~$\cdot$}
+%\newcommand{\vsp}{\vspace{\stretch{1}}}
+\newcommand{\vsp}{\medskip}
+%%%%%%% Numbers and counters %%%%%%%
+\newcount\num
+\newcount\tempone \newcount\temptwo
+\newcommand{\devanumber}[1]{%
+\num=#1\devanumberrecurse}
+
+\newcommand{\devanumberrecurse}{%
+{\tempone=\num
+%  \showthe\tempone\ %
+\ifnum\num > 0 
+	\divide \num by 10%
+	\temptwo=\num \multiply\temptwo by -10%
+	\devanumberrecurse%
+% 	\\stage 2\ %
+% 	\showthe\temptwo\ %
+% 	temp1=\number\tempone\ %
+% 	num=\number\num\ %
+	\advance\tempone by \temptwo%
+	\devadigit
+\fi
+}}
+
+\newcommand{\devadigit}{%
+\ifcase\tempone०\or१\or२\or३\or४\or५\or६\or७\or८\or९\fi%\number\tempone%
+}
+
+\newcommand{\dndigit}[1]{%
+\ifcase#1०\or१\or२\or३\or४\or५\or६\or७\or८\or९\fi%
+}
+%Shloka Counter
+\newcounter{shlokacount}
+\newcommand{\nextShloka}{\stepcounter{shlokacount}\devanumber\c@shlokacount\relax}
+\newcommand{\resetShloka}{\setcounter{shlokacount}{0}}
+\resetShloka
+
+%Kavya
+\newenvironment{kaavya}{\bgroup\resetShloka}{\egroup}
+
+\newcommand{\twolineshloka}{\@ifstar
+                     \twolineshlokaStar%
+                     \twolineshlokaNoStar%
+}
+
+\newcommand{\twolineshlokaNoStar}[2]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#2}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}॥\relax \nextShloka॥}}\hfil}%
+\else%
+\@tempdima=\wd\@tempboxb%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}\hbox{\box\@tempboxb॥\relax \nextShloka॥}}\hfil}%
+\fi}
+
+\newcommand{\twolineshlokaStar}[2]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#2}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}॥}}\hfil}%
+\else%
+\@tempdima=\wd\@tempboxb%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}\hbox{\box\@tempboxb॥}}\hfil}%
+\fi}
+
+\newcommand{\threelineshloka}{\@ifstar
+                     \threelineshlokaStar%
+                     \threelineshlokaNoStar%
+}
+
+\newcommand{\threelineshlokaStar}[3]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#2}%
+\setbox\@tempboxc=\hbox{#3}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\ifdim\wd\@tempboxa>\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxc}॥}}\hfil}%
+\else%
+\@tempdima=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}।}%
+\hbox{\box\@tempboxc॥}}\hfil}%
+\fi%
+\else%
+\@tempdima=\wd\@tempboxb%
+\ifdim\wd\@tempboxb>\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}%
+\hbox{\hbox{\box\@tempboxb।}}
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxc}॥}}\hfil}%
+\else%
+\@tempdima=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}।}%
+\hbox{\box\@tempboxc॥}}\hfil}%
+\fi%
+\fi}
+
+
+\newcommand{\threelineshlokaNoStar}[3]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#2}%
+\setbox\@tempboxc=\hbox{#3}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\ifdim\wd\@tempboxa>\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxc}॥\relax \nextShloka॥}}\hfil}%
+\else%
+\@tempdima=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}।}%
+\hbox{\box\@tempboxc॥\relax \nextShloka॥}}\hfil}%
+\fi%
+\else%
+\@tempdima=\wd\@tempboxb%
+\ifdim\wd\@tempboxb>\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}%
+\hbox{\hbox{\box\@tempboxb।}}
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxc}॥\relax \nextShloka॥}}\hfil}%
+\else%
+\@tempdima=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}।}%
+\hbox{\box\@tempboxc॥\relax \nextShloka॥}}\hfil}%
+\fi%
+\fi}
+
+\newcommand{\fourlineindentedshloka}{\@ifstar
+                     \fourlineindentedshlokaStar%
+                     \fourlineindentedshlokaNoStar%
+}
+
+\newcommand{\fourlineindentedshlokaNoStar}[4]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#3}%
+\setbox\@tempboxc=\hbox{#2}%
+\setbox\@tempboxd=\hbox{#4}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc ।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}॥\relax \nextShloka॥}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd ॥\relax \nextShloka॥}}\hfil}%
+\fi%
+\else%
+\@tempdima=\wd\@tempboxb%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc ।}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}॥\relax \nextShloka॥}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}।}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd ॥\relax \nextShloka॥}}\hfil}%
+\fi%
+\fi}
+
+\newcommand{\fourlineindentedshlokaStar}[4]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#3}%
+\setbox\@tempboxc=\hbox{#2}%
+\setbox\@tempboxd=\hbox{#4}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc ।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}॥}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd ॥}}\hfil}%
+\fi%
+\else%
+\@tempdima=\wd\@tempboxb%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc ।}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}॥}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}।}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd ॥}}\hfil}%
+\fi%
+\fi}
+
+\newcommand{\fourlineshloka}[4]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#3}%
+\setbox\@tempboxc=\hbox{#2}%
+\setbox\@tempboxd=\hbox{#4}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd}}\hfil}%
+\fi%
+\else%
+\@tempdima=\wd\@tempboxb%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd}}\hfil}%
+\fi%
+\fi}
+
+\newcommand{\THREElineshloka}[3]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#2}%
+\setbox\@tempboxc=\hbox{#3}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\ifdim\wd\@tempboxa>\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\box\@tempboxb}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hbox to \@tempdimb{\unhbox\@tempboxc}}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd}}\hfil}%
+\fi%
+\else%
+\@tempdima=\wd\@tempboxb%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd}}\hfil}%
+\fi%
+\fi}
+
+\newcommand{\sect}[1]{%
+\section[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+}
+
+\newcommand{\chapt}[1]{%
+\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+}
+
+\let\origdoublepage\cleardoublepage
+\newcommand{\clearemptydoublepage}{%
+  {\pagestyle{empty}\origdoublepage}%
+}
+
+\newcommand{\dnsub}[1]{
+\medskip
+%\centerline{\Large\bfseries ॥#1॥ }
+\centerline{\Large\fontspec[FakeBold=0.125,FakeStretch=1.08,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003} ॥#1॥ }
+\smallskip
+}
+
+\RequirePackage{bbding}
+\newcommand{\closesection}{\medskip\centerline{\EightFlowerPetal\EightFlowerPetal\EightFlowerPetal}}
+%\newcommand{\closesection}{\medskip\centerline{\FiveFlowerOpen\FiveFlowerOpen\FiveFlowerOpen}}
