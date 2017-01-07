@@ -1,5 +1,5 @@
 #!/bin/bash
-find ../ashtakas -name "*.tex" -maxdepth 1 | while read fpath
+find ../ashtakas -maxdepth 1 -name "*.tex" -newer TaittiriyaBrahmanam-Ashtakams.pdf | while read fpath
 do
 fname=`basename $fpath`
 echo "---------------------------------------------------------------"
