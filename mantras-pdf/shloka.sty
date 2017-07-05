@@ -72,12 +72,14 @@
 \newcommand{\resetShloka}{\setcounter{shlokacount}{0}}
 \resetShloka
 
-%Kavya
-\newenvironment{kaavya}{\bgroup\resetShloka}{\egroup}
-
 \newcommand{\twolineshloka}{\@ifstar
                      \twolineshlokaStar%
                      \twolineshlokaNoStar%
+}
+
+\newcommand{\onelineshloka}{\@ifstar
+                     \onelineshlokaStar%
+                     \onelineshlokaNoStar%
 }
 
 \newcommand{\twolineshlokaNoStar}[2]{%
@@ -90,6 +92,27 @@
 \else%
 \@tempdima=\wd\@tempboxb%
 \hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}\hbox{\box\@tempboxb॥\relax \nextShloka॥}}\hfil}%
+\fi}
+
+\newcommand{\onelineshlokaNoStar}[1]{%
+\vskip\shlokavskip\vsp
+\centerline{#1॥\nextShloka॥}}
+
+\newcommand{\onelineshlokaStar}[1]{%
+\vskip\shlokavskip\vsp
+\centerline{#1।}}
+
+
+\newcommand{\annotwolineshloka}[3]{%
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#2}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa ।}\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}॥\relax \nextShloka॥\footnotesize{#3}\hspace{-3ex}}}\hfil}%
+\else%
+\@tempdima=\wd\@tempboxb%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}।}\hbox{\box\@tempboxb॥\relax \nextShloka॥\footnotesize{#3}\hspace{-3ex}}}\hfil}%
 \fi}
 
 \newcommand{\twolineshlokaStar}[2]{%
@@ -253,6 +276,44 @@
 \fi%
 \fi}
 
+\newcommand{\annofourlineindentedshloka}[5]{%annotated fourlineindentedshloka
+\vskip\shlokavskip\vsp
+\setbox\@tempboxa=\hbox{#1}%
+\setbox\@tempboxb=\hbox{#3}%
+\setbox\@tempboxc=\hbox{#2}%
+\setbox\@tempboxd=\hbox{#4}%
+\ifdim\wd\@tempboxa>\wd\@tempboxb%
+\@tempdima=\wd\@tempboxa%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc ।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}॥\relax \nextShloka॥\footnotesize{#5}\hspace{-3ex}}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\box\@tempboxa}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}।}%
+\hbox{\hbox to \@tempdima{\unhbox\@tempboxb}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd ॥\relax \nextShloka॥\footnotesize{#5}\hspace{-3ex}}}\hfil}%
+\fi%
+\else%
+\@tempdima=\wd\@tempboxb%
+\ifdim\wd\@tempboxc>\wd\@tempboxd%
+\@tempdimb=\wd\@tempboxc%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxc ।}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxd}॥\relax \nextShloka॥\footnotesize{#5}\hspace{-3ex}}}\hfil}%
+\else%
+\@tempdimb=\wd\@tempboxd%
+\hbox to \linewidth{\hfil\vbox{\hbox{\hbox to \@tempdima{\unhbox\@tempboxa}}%
+\hbox{\hskip\shlokaspaceskip\hbox to \@tempdimb{\unhbox\@tempboxc}।}%
+\hbox{\box\@tempboxb}%
+\hbox{\hskip\shlokaspaceskip\box\@tempboxd ॥\relax \nextShloka॥\footnotesize{#5}\hspace{-3ex}}}\hfil}%
+\fi%
+\fi}
+
 \newcommand{\fourlineshloka}[4]{%
 \vskip\shlokavskip\vsp
 \setbox\@tempboxa=\hbox{#1}%
@@ -343,8 +404,14 @@
 \newcommand{\dnsub}[1]{
 \medskip
 %\centerline{\Large\bfseries ॥#1॥ }
-\centerline{\Large\fontspec[FakeBold=0.125,FakeStretch=1.08,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003} ॥#1॥ }
+\centerline{\Large\fontspec[FakeBold=0.125,FakeStretch=1.08,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003} ॥#1॥ }\nopagebreak[4]
 \smallskip
+}
+
+\newcommand{\uvacha}[1]{
+\medskip
+\centerline{\textbf{#1}}\nopagebreak[4]
+%\smallskip
 }
 
 \RequirePackage{bbding}
