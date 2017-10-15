@@ -10,7 +10,7 @@
 \makeatother
 \newcounter{anuvakam}
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
-\newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\footnotesize #1॥\devanumber{\arabic{anuvakam}}॥}}\vhrulefill{3pt}\bfseries{[\devanumber{\arabic{anuvakam}}]}%\hrulefill
+\newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\small #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
 }
 \chapt{तैत्तिरीय आरण्यकम्}
 \input{"aranyakas/ArunaPrashnah.tex"}\clearpage
