@@ -1,0 +1,45 @@
+% !TeX program = XeLaTeX
+% !TeX root = BrahmanamBook-rM.tex
+\documentclass[oneside,12pt]{book}
+\usepackage{etoolbox}
+
+\newbool{kindle}
+\newbool{print}
+\setbool{kindle}{true}
+\setbool{print}{false}
+\usepackage[paperwidth=6.18in,paperheight=8.24in,left=4mm,right=4mm,top=9mm,bottom=10mm]{geometry}
+\input{preamble}
+
+\begin{document}
+\newcommand{\titletext}{तैत्तिरीय\linebreak\mbox{}\linebreak ब्राह्मणम्}
+\input{frontmatter}
+
+
+\renewcommand{\partname}{विभागः}
+\renewcommand{\thepart}{{\dndigit{\arabic{part}}}}
+\Large
+% \setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
+%\setmainfont[Script=Devanagari,Mapping=tex-text,FakeStretch=1.08]{Sanskrit 2003}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Chandas}
+\setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
+\fontsize{20pt}{24pt}\selectfont
+%The following alters word spacing to ensure that words aren't too close to one another!
+\spaceskip=1\fontdimen2\font plus 1\fontdimen3\font minus 1.25\fontdimen4\font
+\input{brahmanas}
+\newpage\mbox{}
+\clearemptydoublepage
+\chapt{तैत्तिरीय आरण्यकम्}
+\input{"aranyakas/ArunaPrashnah.tex"}\clearpage
+\input{"aranyakas/SahaVai.tex"}\clearpage
+\input{"aranyakas/Chittissruk.tex"}\clearpage
+\input{"aranyakas/NamoVache.tex"}\clearpage
+\input{"aranyakas/DevaVai.tex"}\clearpage
+\input{"aranyakas/PareyuvaMsam.tex"}\clearpage
+\input{"aranyakas/Taittiriyopanishat.tex"}\clearpage
+\input{"aranyakas/Mahanarayanopanishat.tex"}\clearpage
+\newpage\mbox{}
+\clearemptydoublepage
+\input{"aranyakas/Kathaka.tex"}
+%\mbox{}\clearemptydoublepage
+\end{document}
