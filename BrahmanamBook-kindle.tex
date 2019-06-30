@@ -11,6 +11,15 @@
 \addtolength{\headsep}{-4mm}}{\usepackage[top=1.5cm, bottom=1.8cm, left=1.5cm, right=1.5cm,paperwidth=148mm,paperheight=210mm]{geometry}}
 
 \input{preamble}
+\newcommand{\chaptertitle}{}
+\renewcommand{\chapt}[1]{%
+\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+\renewcommand{\chaptertitle}{(#1)}
+}
+\lhead[\fancyplain{}{\pagenumfont\large\thepage}]
+   {\fancyplain{}{{\leftmark\ \chaptertitle}}}
+\rhead[\fancyplain{}{{\leftmark\ \chaptertitle)}}]
+   {\fancyplain{}{\pagenumfont\large\thepage}}
 \ifbool{print}{%Margin changes for print
 \addtolength{\evensidemargin}{-0.5cm}
 \addtolength{\oddsidemargin}{0.5cm}}{}
