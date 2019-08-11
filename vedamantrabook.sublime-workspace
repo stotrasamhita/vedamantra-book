@@ -4,8 +4,100 @@
 		"selected_items":
 		[
 			[
+				"sol",
+				"solar_month"
+			],
+			[
+				"jd_",
+				"jd_start_utc"
+			],
+			[
+				"sola",
+				"solar_month_day"
+			],
+			[
 				"out",
-				"output_file"
+				"output_stream\tparam"
+			],
+			[
+				"start",
+				"start_day\tstatement"
+			],
+			[
+				"assi",
+				"assigned_day\tstatement"
+			],
+			[
+				"jd_sun",
+				"jd_sunset"
+			],
+			[
+				"ass",
+				"assigned_day\tstatement"
+			],
+			[
+				"jd_m",
+				"jd_midnight"
+			],
+			[
+				"ek",
+				"ekadashi_tithi_days"
+			],
+			[
+				"eka",
+				"ekadashi_tithi_days\tstatement"
+			],
+			[
+				"sam",
+				"samvatsara_id_1\tstatement"
+			],
+			[
+				"ang",
+				"angam_now\tstatement"
+			],
+			[
+				"lun",
+				"lunar_month\tstatement"
+			],
+			[
+				"jd_e",
+				"jd_eclipse_lunar_start\tstatement"
+			],
+			[
+				"jd_end",
+				"jd_end_utc\tstatement"
+			],
+			[
+				"star",
+				"start_date"
+			],
+			[
+				"prev",
+				"prev_day_dd\tstatement"
+			],
+			[
+				"pred",
+				"prev_day_yy\tstatement"
+			],
+			[
+				"jd_sta",
+				"jd_start_utc"
+			],
+			[
+				"jd_s",
+				"jd_start_utc"
+			],
+			[
+				"refer",
+				"references_primary"
+			],
+			[
+				"get_an",
+				"get_angam_float\tfunction"
+			],
+			[
+				"i",
+				"ifmain\tif __name__ == '__main__'"
 			],
 			[
 				"city",
@@ -158,10 +250,6 @@
 			[
 				"this_ne",
 				"this_new_moon_start\tstatement"
-			],
-			[
-				"jd_",
-				"jd_sunrise\tstatement"
 			],
 			[
 				"rev",
@@ -392,10 +480,6 @@
 				"helper_functions\tmodule"
 			],
 			[
-				"jd_sun",
-				"jd_sunSet\tstatement"
-			],
-			[
 				"loc_",
 				"loc_origin\tparam"
 			],
@@ -430,100 +514,16 @@
 			[
 				"ka",
 				"kandanum\tstatement"
-			],
-			[
-				"next",
-				"nextline"
-			],
-			[
-				"sh",
-				"shlokanum\tstatement"
-			],
-			[
-				"ve",
-				"verses\tstatement"
-			],
-			[
-				"nA",
-				"nAmAlist\tstatement"
-			],
-			[
-				"verse",
-				"verse_list\tstatement"
-			],
-			[
-				"ch",
-				"chandasList\tstatement"
-			],
-			[
-				"page",
-				"pageName\tstatement"
-			],
-			[
-				"ver",
-				"verse_list\tstatement"
-			],
-			[
-				"read",
-				"read_text"
-			],
-			[
-				"time",
-				"time_course_data\tstatement"
-			],
-			[
-				"set",
-				"setGlobalParameterValues"
-			],
-			[
-				"tim",
-				"time_course_data"
-			],
-			[
-				"NU",
-				"NUM_PARAMS"
-			],
-			[
-				"de",
-				"degludec_ode"
-			],
-			[
-				"nor",
-				"normalise\tfunction"
-			],
-			[
-				"y",
-				"ylabel\tfunction"
-			],
-			[
-				"para",
-				"param_set\tforstmt"
-			],
-			[
-				"deg",
-				"degludec_compute_err"
-			],
-			[
-				"sam",
-				"sample_params\tfunction"
-			],
-			[
-				"scipy",
-				"scipy_fmin\tclass"
-			],
-			[
-				"fr",
-				"freeze_support\tfunction"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "mantras/RudraPadaPatha.tex",
+			"file": "/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/RigvedaSamidadhanam.tex",
 			"settings":
 			{
-				"buffer_size": 14652,
+				"buffer_size": 2890,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -625,6 +625,18 @@
 		"selected_items":
 		[
 			[
+				"LOWE",
+				"Convert Case: Lower Case"
+			],
+			[
+				"tit",
+				"Convert Case: Title Case"
+			],
+			[
+				"Upp",
+				"Convert Case: Upper Case"
+			],
+			[
 				"wra",
 				"Word Wrap: Toggle"
 			],
@@ -639,10 +651,6 @@
 			[
 				"prefer",
 				"Preferences: Settings"
-			],
-			[
-				"Upp",
-				"Convert Case: Upper Case"
 			],
 			[
 				"Upper",
@@ -687,10 +695,6 @@
 			[
 				"lo",
 				"Convert Case: Lower Case"
-			],
-			[
-				"tit",
-				"Convert Case: Title Case"
 			],
 			[
 				"texp",
@@ -959,39 +963,126 @@
 	"expanded_folders":
 	[
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras"
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas"
 	],
 	"file_history":
 	[
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/YajnopavitaDharanam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/YajurvedaBrahmayajna.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/Vedarambhah.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/KandarishiTarpanam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/GayatriJapa.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/YajurvedaSamidadhanam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/MahaSankalpa.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/YajurUpakarma.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/KamokarshitJapa.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/RigUpakarma.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/YajurUpakarma-Abridged.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/shloka.sty",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/samidha.HK",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/full.HK",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/ChandraGrahanaSnanaSankalpa/ChandraGrahanaSnanaSankalpa.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/ChandraGrahanaSnanaSankalpa-multilang/ChandraGrahanaSnanaSankalpa-tamil.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/ChandraGrahanaSnanaSankalpa-multilang/ChandraGrahanaSnanaSankalpa-devanagari.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/DurgaSuktam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/AgniSmaranam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/BhuSuktam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Taittiriyopanishat.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/PareyuvaMsam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/DevaVai.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Chittissruk.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas/TaittiriyaBrahmanam-Ashtakams.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/SahaVai.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas/TaittiriyaBrahmanam-3-7.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/UdakaShanti.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Mahanarayanopanishat.tex",
+		"/C/Users/Karthik/Desktop/Panchanga-AngaDevatas.txt",
+		"/C/Users/Karthik/ownCloud/IITM/Courses/DSABio/2019/slides/lecture-03/BT3051-2019-03-introduction-to-python.tex",
+		"/D/Karthik/GitHub/kamakoti-panchangam/drik/templates/monthly_cal_template.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/aruNaprashnaH.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras-pdf/mantra-template.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/Samidadhanam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/Upakarma/shloka.sty",
+		"/D/Karthik/GitHub/StotraSamhita/puja-vidhanam/pujas/ekadashi-purusha-sukta-vidhanam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas/TaittiriyaBrahmanam-1-1.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/Upakarma/YajurUpakarma.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/kAThaka.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/Brahmayajna.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/YajurUpakarma.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/shloka.sty",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/Upakarma/Chaturmasyam.tex",
+		"/D/Karthik/GitHub/kamakoti-panchangam/drik/tex/Chennai-2019-vikArI-panchangam1.tex",
+		"/D/Karthik/GitHub/kamakoti-panchangam/drik/tex/Chennai-2019-vikArI-panchangam.tex",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_tex.py",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/annual.py",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/relative_festival_rules.json",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules.json",
+		"/D/Karthik/GitHub/kamakoti-panchangam/drik/bin/write_periodical_daily_panchangam_tex.py",
+		"/D/Karthik/GitHub/panchangam/tex/data/daily_cal_template.tex",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_periodical_daily_panchangam_tex.py",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/__init__.py",
+		"/D/Karthik/GitHub/panchangam/tex/data/periodical.tex",
+		"/C/Users/Karthik/Dropbox/TODO/panchangam-TODO/ShriRamanaSharma-codes/panchangam/jdn2cal.py",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/daily.py",
+		"/C/Users/Karthik/Dropbox/TODO/panchangam-TODO/ShriRamanaSharma-codes/panchangam/chandra-helper.c",
+		"/C/Users/Karthik/Dropbox/TODO/panchangam-TODO/ShriRamanaSharma-codes/panchangam/dina-shuddhi.py",
+		"/C/Users/Karthik/Dropbox/TODO/panchangam-TODO/ShriRamanaSharma-codes/panchangam/jdCalFormulae.py",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/names/data/translation_table_HK.json",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/periodical.py",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_ics.py",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/__init__.py",
+		"/C/Users/Karthik/Dropbox/TODO/panchangam-TODO/ShriRamanaSharma-codes/panchangam/janma-tithi-nakshatra-extract.py",
+		"/C/Users/Karthik/Dropbox/TODO/panchangam-TODO/ShriRamanaSharma-codes/panchangam/janma-tithi-nakshatra-gui-names.py",
+		"/C/Users/Karthik/Dropbox/TODO/panchangam-TODO/ShriRamanaSharma-codes/panchangam/jdcal.py",
+		"/C/Users/Karthik/Dropbox/TODO/panchangam-TODO/ShriRamanaSharma-codes/panchangam/chandra-darshana.c",
+		"/C/Users/Karthik/Dropbox/adyatithi/sunrise-sunset/sunrise-sunset-analysis-ics.py",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_txt.py",
+		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2020-Chennai-deva-lagna.tex",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/data/templates/daily_cal_template.tex",
+		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2020-Chennai-deva-lagna1.tex",
+		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2019-Chennai-deva.tex",
+		"/D/Karthik/GitHub/kamakoti-panchangam/drik/ics/daily/Kanchi-2019-tamil-daily.ics",
+		"/C/Users/Karthik/Desktop/Home.html",
+		"/C/Users/Karthik/Desktop/Post-doctoral fellows_v1.docx",
+		"/C/Users/Karthik/ownCloud/IITM/Courses/NMBio/2019/tests/endsem-part/BT2020-2018-endsem-part.tex",
+		"/C/Users/Karthik/GitHub/kamakoti-panchangam/ashtanga/bin/2020_ashtanga_devanagari.txt",
+		"/D/Karthik/GitHub/StotraSamhita/stotrasamhita.net-wiki/README.md",
+		"/C/Users/Karthik/GitHub/panchangam/txt/daily/Chhennai-2012-devanagari-daily.md",
+		"/C/Users/Karthik/Dropbox (Personal)/adyatithi/sunrise-sunset/sunrise-sunset-analysis-ics.py",
+		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules_desc_only.json",
+		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_tex.py",
+		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_ics.py",
+		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/daily.py",
+		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/annual.py",
+		"/C/Users/Karthik/GitHub/kamakoti-panchangam/ashtanga/bin/2019_ashtanga_devanagari.txt",
+		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules.json",
+		"/C/Users/Karthik/GitHub/panchangam/ics/daily/kAJcI-2019-tamil-daily.ics",
+		"/C/Users/Karthik/GitHub/panchangam/txt/daily/Chhennai-2021-devanagari-daily.md",
+		"/C/Users/Karthik/Desktop/vriddhi_kshayam.py",
+		"/D/Karthik/GitHub/panchangam/txt/daily/Shrirangam-2019-devanagari-daily-lagna.md",
+		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules_desc_only.json",
+		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2020-Kanchi-deva.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/Chaturmasyam/Chaturmasyam.tex",
+		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2019-Chennai-deva1.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/ChandraGrahanaSnanaSankalpa/ChandraGrahanaSnanaSankalpa-devanagari.tex",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP/ChandraGrahanaSnanaSankalpa/ChandraGrahanaSnanaSankalpa-IAST.tex",
+		"/C/Users/Karthik/Dropbox/Software/mudgala-ime/input_itrans.txt",
+		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/nityaparayanam/stotras.tex",
 		"/C/Users/Karthik/Dropbox/Software/mudgala-ime/input_harvard.txt",
 		"/D/Karthik/GitHub/panchangam/txt/daily/Shrirangam-2019-devanagari-daily-lagna.txt",
 		"/D/Karthik/GitHub/panchangam/txt/daily-cal-2019-zrIraGgam-deva.txt",
 		"/D/Karthik/GitHub/kamakoti-panchangam/vakyam/bin/write_daily_panchangam_ics.py",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_ics.py",
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_ics (2).py",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/names/data/translation_table_HK.json",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/data/templates/daily_cal_template.tex",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/__init__.py",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/daily.py",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/annual.py",
-		"/D/Karthik/GitHub/StotraSamhita/VDSP/ChandraGrahanaSnanaSankalpa/ChandraGrahanaSnanaSankalpa-devanagari.tex",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_tex.py",
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_csv.py",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras.tex",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/navagraha/ChandraGrahanaPidapariharaShlokam.tex",
 		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2020-Chennai-deva1.tex",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/navagraha/NavagrahaPidaharaStotram.tex",
-		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2019-Chennai-deva.tex",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules.json",
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/ics.py",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/ArunaPrashnah.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/preamble.tex",
 		"/D/Karthik/GitHub/kamakoti-panchangam/drik/docs/aradhana-days/kanchi_aradhana_rules.json",
 		"/C/Users/Karthik/Dropbox/test.txt",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules_desc_only.json",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/relative_festival_rules.json",
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/migrator.py",
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/__init__.py",
 		"/D/Karthik/GitHub/panchangam/ics/Chennai-2019-devanagari.ics",
@@ -1003,103 +1094,15 @@
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/data/lunar_month/tithi/07/29/README.md",
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/data/solar_month/day/04/18/ta__ADip~perukku__info.json",
 		"/D/Karthik/GitHub/panchangam/obsolete/createURLs.py",
-		"/D/Karthik/GitHub/panchangam/docs/kanchi_aradhana_days_devanagari.md",
-		"/C/Users/Karthik/Dropbox/Software/Sublime Text Build 3114 x64/Panchangam.sublime-project",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/data/festival_rules_desc_only.json",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/data/festival_rules.json",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/names/init_names_auto.py",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/4_ConstraintBasedModelling/FluxBalanceAnalysis.tex",
-		"/C/Users/Karthik/Dropbox/adyatithi/Star Birthdays/Chennai-2019-kshaura-days.ics",
-		"/C/Users/Karthik/Dropbox/Photos/Portraits/karthikraman.jpg",
-		"/C/Users/Karthik/Desktop/NAMES.json",
-		"/C/Users/Karthik/Desktop/abs.ics",
-		"/C/Users/Karthik/Desktop/bhanusaptami.ics",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/frontmatter/preamble.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/SBBook.bib",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/4_ConstraintBasedModelling/PerturbationsToMetabolicNetworks.tex",
-		"/C/Users/Karthik/Dropbox/IITM/Talks/2015/NNMCB/FastSL.bib",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/4_ConstraintBasedModelling/OtherConstraint-basedApproaches.tex",
-		"/C/Users/Karthik/Dropbox/IITM/Talks/2015/NNMCB/Raman-FastSL.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Bibliography.bib",
-		"/C/Users/Karthik/Downloads/hubmed-26609052.bib",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/SBBook.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/SBBook.ind",
-		"/C/Users/Karthik/Dropbox/IITM/Talks/2018/ASP/Raman-CompMetNet.tex",
-		"/D/Karthik/GitHub/kamakoti-panchangam/drik/ics/daily/Kanchi-2019-sa-ta-en-daily.ics",
-		"/C/Users/Karthik/ownCloud/IITM/Courses/DSABio/2018/Att_prizes.txt",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/4_ConstraintB",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Alon.cls",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/chapter1/ch1.tex",
-		"/C/Users/Karthik/AppData/Local/Temp/7zOC960B024/ch5.tex",
-		"/C/Users/Karthik/Dropbox/IITM/Talks/2018/ASP/template.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/A_ReconstructionOfNetworks/ReconstructionOfNetworks.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/6_ModellingCellularInteractions/Host-pathogenInteractions.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/2_NetworkBiology/StructureOfBiologicalNetworks.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/4_ConstraintBasedModelling/ApplicationsOfConstraint-basedModels.tex",
-		"/D/Karthik/GitHub/RamanLab/Theses/MS/src/01-AdityaPratapa/texs/relatedwork.tex",
-		"/D/Karthik/GitHub/RamanLab/Theses/MS/src/01-AdityaPratapa/refs_DoI.bib",
-		"/D/Karthik/GitHub/StotraSamhita/puja-vidhanam/pujas/laghu-panchayatana-puja.tex",
-		"/D/Karthik/GitHub/StotraSamhita/namavali-manjari/100/Sita_108.tex",
-		"/D/Karthik/GitHub/StotraSamhita/namavali-manjari/100/Rama_108.tex",
-		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/nityaparayanam/stotras.tex",
-		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/nityaparayanam/nityaparayanam-vedam.tex",
-		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/nityaparayanam/vedamantras.tex",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/SahaVai.tex",
-		"/C/Users/Karthik/Desktop/err.txt",
-		"/C/Users/Karthik/Desktop/SREP.countries.txt",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/4_ConstraintBasedModelling/figs/efm_fig.tex",
-		"/C/Users/Karthik/Dropbox/Madras/Taxes/FY2018-19/80G/Pending.txt",
-		"/D/Karthik/GitHub/panchangam/csv/daily-cal-2019-Chennai-tami.csv",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/3_DynamicModels/IntroductionToDynamicModelling.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/0_BiologyFundamentals/BiologyFundamentals.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/4_ConstraintBasedModelling/figs/flux_space_moma.tex",
-		"/D/Karthik/OneDrive/BackupVault/Misc/calc/debug_logs/cal_log_1983.txt",
-		"/D/Karthik/OneDrive/BackupVault/Misc/calc/debug_logs/TODO.txt",
-		"/D/Karthik/OneDrive/BackupVault/kappa-recovery/TODO/panchatantra.txt",
-		"/D/Karthik/OneDrive/BackupVault/kappa-recovery/TODO/subha_itra.txt",
-		"/D/Karthik/OneDrive/BackupVault/kappa-recovery/desktop_04-19-2015 at 21_29_41.rsf",
-		"/C/Users/Karthik/Dropbox/scratch/write_adyatithi_yaml.py",
-		"/C/Users/Karthik/ownCloud/IITM/Courses/SystemsBiology/2019/tests/endsem/soln/bool_async_OR.txt",
-		"/C/Users/Karthik/ownCloud/IITM/Courses/SystemsBiology/2019/tests/endsem/soln/bool_async_AND.txt",
-		"/C/Users/Karthik/ownCloud/IITM/Courses/SystemsBiology/2019/tests/endsem/soln/booltab.txt",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/10.toc",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/2_NetworkBiology/codes/barabasi_albert.m",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/3_DynamicModels/DynamicModels.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/SBBook.toc",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2019/codes/res_combos.txt",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/4_ConstraintBasedModelling/figs/flux_space.tex",
-		"/C/Users/Karthik/Dropbox/PhD/Thesis/reconstruction/reconstruction.tex",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2013/codes/match_data.txt",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2013/codes/run_sim.m",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2019/codes/team2.txt",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2019/codes/res_combos_abbr.txt",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2019/codes/winners.txt",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2019/codes/team1.txt",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2019/codes/match_data.txt",
-		"/C/Users/Karthik/Dropbox/Programming/Cricket/IPL_2013/codes/res_combos.txt",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/0_BiologyFundamentals/figs/nucleobases.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/B_DatabasesForSystemsBiology/DatabasesForSystemsBiology.tex",
-		"/C/Users/Karthik/Dropbox/Apps/Overleaf/tikz_reactions/main.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/2_NetworkBiology/IntroductionToGraphTheory.tex",
-		"/D/Karthik/ownCloud/IITM/Courses/SystemsBiology/2013/tests/quiz-2/BT5240-2013-quiz-2.tex",
-		"/D/Karthik/ownCloud/IITM/Courses/SystemsBiology/2013/tests/quiz-3/BT5240-2013-quiz-3.tex",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/Chapters/C_SoftwareToolsCompendium/SoftwareToolsCompendium.tex",
-		"/C/Users/Karthik/Downloads/Chennai2019PanchangaImage.csv",
-		"/C/Users/Karthik/Desktop/gen_png.sh",
-		"/C/Users/Karthik/Dropbox/Software/Sublime Text Build 3114 x64/Data/Packages/User/LaTeXTools.sublime-settings",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/__init__.py",
-		"/C/Users/Karthik/Dropbox/IITM/PaperDrafts/SBBook/TeX reports the error was in file",
-		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/nityaparayanam/shloka.sty",
-		"/C/Users/Karthik/Dropbox/Software/Sublime Text Build 3114 x64/changelog.txt",
-		"/C/Users/Karthik/ownCloud/IITM/Courses/NMBio/2019/tests/endsem-part/BT2020-2019-endsem-part.tex"
+		"/D/Karthik/GitHub/panchangam/docs/kanchi_aradhana_days_devanagari.md"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
-		"height": 116.0,
+		"height": 121.0,
 		"where_history":
 		[
 			""
@@ -1110,19 +1113,54 @@
 		"case_sensitive": true,
 		"find_history":
 		[
-			"प्रेति",
-			"सो॑का",
-			"स ",
+			"Yajurveda",
+			"संख्",
+			"sep}",
+			"sep",
+			"॥",
+			"\\twolineshloka*",
+			"fचप्तेर्",
+			"-अने",
+			" ",
+			"\\sep{}",
+			" ",
+			"म्प",
+			"setmain",
+			"\\\\",
+			"स्सा",
+			"व्वेँ",
+			"श्श",
+			"व॑स्स्",
+			"sect",
+			"\\\\",
+			"small",
+			"fस्मल्ल्",
+			"XYZ",
+			"textbf",
+			"क्षुधे",
+			"\\n\\\\anuvaka",
+			"त्रि॒ष्टुभौजः॑",
+			"बृ॒हत्सा",
+			"बृ॒हत्",
+			"बृ॒हत्साम॑ ",
+			"कल्पय।",
+			"कल्पय\\",
+			"कल्पय\\> ",
+			"कल्पय",
+			"। ",
+			"स॒जा॒त॒श॒सादु॒त",
+			"यथात",
+			"वेत्थ",
+			"दी॒नद॑क्षा॒",
+			"दी॒नद॑क्षा॒ ",
+			"दीनदक्षा ",
+			"॥ ",
 			"f",
-			"स ",
-			"स सृ",
-			"ससृ",
-			"स सृ",
-			"ससृ",
-			"स सृ",
-			"स ",
-			"स  ",
-			"स"
+			"। ",
+			"f",
+			"ए॒ष हि दे॒वः",
+			"ए॒ष हि",
+			"स॒प्त ते॑ अग्ने"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1145,98 +1183,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "mantras/RudraPadaPatha.tex",
+					"file": "/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/RigvedaSamidadhanam.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14652,
+						"buffer_size": 2890,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1806,
-								1812
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
 							"bracket_highlighter.locations":
 							{
 								"close":
@@ -1254,66 +1219,66 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 132.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1324,11 +1289,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
-		"height": 41.0
+		"height": 43.0
 	},
 	"layout":
 	{
@@ -1369,7 +1334,7 @@
 	"project": "vedamantrabook.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1379,8 +1344,76 @@
 		"selected_items":
 		[
 			[
+				"dur",
+				"mantras\\DurgaSuktam.tex"
+			],
+			[
+				"agni",
+				"mantras\\AgniSmaranam.tex"
+			],
+			[
+				"vik",
+				"drik\\tex\\Chennai-2019-vikArI-panchangam.tex"
+			],
+			[
+				"vika",
+				"drik\\tex\\Chennai-2019-vikArI-panchangam.tex"
+			],
+			[
 				"daily",
-				"jyotisha\\jyotisha\\panchangam\\data\\templates\\daily_cal_template.tex"
+				"drik\\templates\\daily_cal_template.tex"
+			],
+			[
+				"annual",
+				"jyotisha\\jyotisha\\panchangam\\spatio_temporal\\annual.py"
+			],
+			[
+				"festiv",
+				"jyotisha\\jyotisha\\panchangam\\temporal\\festival\\legacy\\festival_rules.json"
+			],
+			[
+				"relat",
+				"jyotisha\\jyotisha\\panchangam\\temporal\\festival\\legacy\\relative_festival_rules.json"
+			],
+			[
+				"write perio",
+				"jyotisha\\jyotisha\\panchangam\\scripts\\write_periodical_daily_panchangam_tex.py"
+			],
+			[
+				"writeDai",
+				"jyotisha\\jyotisha\\panchangam\\scripts\\write_daily_panchangam_tex.py"
+			],
+			[
+				"annu",
+				"jyotisha\\jyotisha\\panchangam\\spatio_temporal\\annual.py"
+			],
+			[
+				"perio",
+				"jyotisha\\jyotisha\\panchangam\\spatio_temporal\\periodical.py"
+			],
+			[
+				"HK",
+				"jyotisha\\jyotisha\\names\\data\\translation_table_HK.json"
+			],
+			[
+				"dail",
+				"jyotisha\\jyotisha\\panchangam\\spatio_temporal\\daily.py"
+			],
+			[
+				"annua",
+				"jyotisha\\jyotisha\\panchangam\\spatio_temporal\\annual.py"
+			],
+			[
+				"write",
+				"jyotisha\\jyotisha\\panchangam\\scripts\\write_daily_panchangam_ics.py"
+			],
+			[
+				"a",
+				"jyotisha\\jyotisha\\panchangam\\spatio_temporal\\annual.py"
+			],
+			[
+				"desc",
+				"jyotisha\\jyotisha\\panchangam\\temporal\\festival\\legacy\\festival_rules_desc_only.json"
 			],
 			[
 				"shri",
@@ -1415,16 +1448,8 @@
 				"jyotisha\\jyotisha\\panchangam\\scripts\\write_daily_panchangam_tex.py"
 			],
 			[
-				"annu",
-				"jyotisha\\jyotisha\\panchangam\\spatio_temporal\\annual.py"
-			],
-			[
 				"fe",
 				"jyotisha\\jyotisha\\panchangam\\temporal\\festival\\legacy\\festival_rules.json"
-			],
-			[
-				"desc",
-				"jyotisha\\jyotisha\\panchangam\\temporal\\festival\\legacy\\festival_rules_desc_only.json"
 			],
 			[
 				"fes",
@@ -1772,8 +1797,8 @@
 	},
 	"select_symbol":
 	{
-		"height": 197.0,
-		"last_filter": "get_angam_",
+		"height": 37.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -1795,7 +1820,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 313.0,
+	"side_bar_width": 283.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
