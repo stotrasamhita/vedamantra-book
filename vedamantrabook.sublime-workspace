@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"file",
+				"file_lines\tstatement"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
 				"sol",
 				"solar_month"
 			],
@@ -506,69 +514,17 @@
 			[
 				"sarga",
 				"sarganum\tstatement"
-			],
-			[
-				"sarg",
-				"sarganum\tstatement"
-			],
-			[
-				"ka",
-				"kandanum\tstatement"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/devanagari/YajurvedaBrahmayajna.tex",
+			"file": "/D/Karthik/GitHub/StotraSamhita/updateDropboxKindlePDFs.bat",
 			"settings":
 			{
-				"buffer_size": 4254,
+				"buffer_size": 8705,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/stotramanjari/stotras1.tex",
-			"settings":
-			{
-				"buffer_size": 3260,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/big/SuryaSahasranamaStotram.tex",
-			"settings":
-			{
-				"buffer_size": 14380,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Karthik/GitHub/StotraSamhita/puja-vidhanam/pujas/dhanvantari-puja.tex",
-			"settings":
-			{
-				"buffer_size": 12352,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "mantras/MahaNyasah.tex",
-			"settings":
-			{
-				"buffer_size": 77876,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Karthik/Desktop/a.txt",
-			"settings":
-			{
-				"buffer_size": 579300,
 				"line_ending": "Unix"
 			}
 		}
@@ -1013,13 +969,40 @@
 	],
 	"file_history":
 	[
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/Aupasanam.tex",
+		"/D/Karthik/GitHub/kamakoti-panchangam/drik/ics/daily/Kanchi-2020-devanagari-daily.ics",
+		"/D/Karthik/GitHub/kamakoti-panchangam/drik/bin/write_daily_panchangam_ics.py",
+		"/C/Users/Karthik/Desktop/test.html",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/cleanText.py",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Chittissruk.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/preamble.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/DevaVai.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/ShriSuktam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/MantraPushpam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas/TaittiriyaBrahmanam-Ashtakams.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/MahaNyasah.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/aruNaprashnaH.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/DashaShantayah.tex",
+		"/C/Users/Karthik/Dropbox/Software/mudgala-ime/input_itrans.txt",
+		"/C/Users/Karthik/Dropbox/Software/mudgala-ime/output_devanagari.txt",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Mahanarayanopanishat.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/Ganapatyatharvashirsham.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/UdakaShanti.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/RudraPrashnah.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/PurushaSuktam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/NarayanaSuktam.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Taittiriyopanishat.tex",
+		"/C/Users/Karthik/Desktop/a.txt",
+		"/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/devanagari/YajurvedaBrahmayajna.tex",
+		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/stotramanjari/stotras1.tex",
+		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/big/SuryaSahasranamaStotram.tex",
+		"/D/Karthik/GitHub/StotraSamhita/puja-vidhanam/pujas/dhanvantari-puja.tex",
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules_desc_only.json",
 		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules.json",
 		"/C/Users/Karthik/Desktop/Junk/verse-checker/test/SBhuj.wiki",
 		"/C/Users/Karthik/Desktop/Junk/verse-checker/test/GBhuj.wiki",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/ganesha/GaneshaBhujangam.tex",
 		"/D/Karthik/GitHub/StotraSamhita/updateDropboxKindlePDFs.bat",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas/TaittiriyaBrahmanam-Ashtakams.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/SahaVai.tex",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/nityaparayanam/vedamantras.tex",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/hanuman/ApaduddharakaDwadashamukhaHanumanStotram.tex",
@@ -1055,17 +1038,11 @@
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/DurgaSuktam.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/AgniSmaranam.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/BhuSuktam.tex",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Taittiriyopanishat.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/PareyuvaMsam.tex",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/DevaVai.tex",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Chittissruk.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas/TaittiriyaBrahmanam-3-7.tex",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/UdakaShanti.tex",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/Mahanarayanopanishat.tex",
 		"/C/Users/Karthik/Desktop/Panchanga-AngaDevatas.txt",
 		"/C/Users/Karthik/ownCloud/IITM/Courses/DSABio/2019/slides/lecture-03/BT3051-2019-03-introduction-to-python.tex",
 		"/D/Karthik/GitHub/kamakoti-panchangam/drik/templates/monthly_cal_template.tex",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/aruNaprashnaH.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras-pdf/mantra-template.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/Samidadhanam.tex",
 		"/D/Karthik/GitHub/StotraSamhita/VDSP/Upakarma/shloka.sty",
@@ -1119,28 +1096,7 @@
 		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_ics.py",
 		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/daily.py",
 		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/annual.py",
-		"/C/Users/Karthik/GitHub/kamakoti-panchangam/ashtanga/bin/2019_ashtanga_devanagari.txt",
-		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/temporal/festival/legacy/festival_rules.json",
-		"/C/Users/Karthik/GitHub/panchangam/ics/daily/kAJcI-2019-tamil-daily.ics",
-		"/C/Users/Karthik/GitHub/panchangam/txt/daily/Chhennai-2021-devanagari-daily.md",
-		"/C/Users/Karthik/Desktop/vriddhi_kshayam.py",
-		"/D/Karthik/GitHub/panchangam/txt/daily/Shrirangam-2019-devanagari-daily-lagna.md",
-		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2020-Kanchi-deva.tex",
-		"/D/Karthik/GitHub/StotraSamhita/VDSP/Chaturmasyam/Chaturmasyam.tex",
-		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2019-Chennai-deva1.tex",
-		"/D/Karthik/GitHub/StotraSamhita/VDSP/ChandraGrahanaSnanaSankalpa/ChandraGrahanaSnanaSankalpa-devanagari.tex",
-		"/D/Karthik/GitHub/StotraSamhita/VDSP/ChandraGrahanaSnanaSankalpa/ChandraGrahanaSnanaSankalpa-IAST.tex",
-		"/C/Users/Karthik/Dropbox/Software/mudgala-ime/input_itrans.txt",
-		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/nityaparayanam/stotras.tex",
-		"/C/Users/Karthik/Dropbox/Software/mudgala-ime/input_harvard.txt",
-		"/D/Karthik/GitHub/panchangam/txt/daily/Shrirangam-2019-devanagari-daily-lagna.txt",
-		"/D/Karthik/GitHub/panchangam/txt/daily-cal-2019-zrIraGgam-deva.txt",
-		"/D/Karthik/GitHub/kamakoti-panchangam/vakyam/bin/write_daily_panchangam_ics.py",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_ics (2).py",
-		"/D/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_csv.py",
-		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras.tex",
-		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/navagraha/ChandraGrahanaPidapariharaShlokam.tex",
-		"/D/Karthik/GitHub/panchangam/tex/data/daily-cal-2020-Chennai-deva1.tex"
+		"/C/Users/Karthik/GitHub/kamakoti-panchangam/ashtanga/bin/2019_ashtanga_devanagari.txt"
 	],
 	"find":
 	{
@@ -1159,6 +1115,33 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"&",
+			"LOC",
+			"av{}",
+			"\\aav{}",
+			"av{",
+			"av",
+			"सया॒",
+			"य॒\\aav{}\\aav{}",
+			"य॒\\aav\\aav{}",
+			"av",
+			"\\aav{}",
+			"av{}",
+			"av",
+			"av{}",
+			"य॒\\aav\\aav{}",
+			"av",
+			"\\aav{}",
+			"av{}",
+			"\\aav{}",
+			"मा यज॑मानः",
+			"\\\\mbox{}",
+			"\\mbox{}",
+			"त्स्",
+			"\\m",
+			"[क्]स्",
+			"क्स्",
+			"त्स्",
 			"pradO",
 			"mUrk",
 			"तत्स॑र्व",
@@ -1269,16 +1252,16 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Karthik/GitHub/StotraSamhita/VDSP-sankalpa-PDFs/Upakarma/devanagari/YajurvedaBrahmayajna.tex",
+					"file": "/D/Karthik/GitHub/StotraSamhita/updateDropboxKindlePDFs.bat",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4254,
+						"buffer_size": 8705,
 						"regions":
 						{
 						},
@@ -1286,7 +1269,7 @@
 						[
 							[
 								0,
-								0
+								8705
 							]
 						],
 						"settings":
@@ -1310,994 +1293,69 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 266.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/stotramanjari/stotras1.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2875,
-								2875
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2880,
-										2881
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										2824,
-										2825
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1029.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/big/SuryaSahasranamaStotram.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14380,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6763,
-								6779
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										6779,
-										6780
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										6742,
-										6743
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										6779,
-										6780
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										6742,
-										6743
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4575.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/D/Karthik/GitHub/StotraSamhita/puja-vidhanam/pujas/dhanvantari-puja.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12352,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10692,
-								10692
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
+								"bh_unmatched_content"
 							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 6317.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "mantras/MahaNyasah.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 77876,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								32149,
-								32154
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 11611.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/Karthik/Desktop/a.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 579300,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3315,
-								3315
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -2359,6 +1417,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"au",
+				"mantras\\Aupasanam.tex"
+			],
+			[
+				"arun",
+				"aranyakas\\aruNaprashnaH.tex"
+			],
 			[
 				"dur",
 				"mantras\\DurgaSuktam.tex"
