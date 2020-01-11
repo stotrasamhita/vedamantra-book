@@ -520,11 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "/D/Karthik/GitHub/StotraSamhita/updateDropboxKindlePDFs.bat",
+			"file": "vedamantrabook.sublime-project",
 			"settings":
 			{
-				"buffer_size": 8705,
-				"encoding": "UTF-8",
+				"buffer_size": 247,
 				"line_ending": "Unix"
 			}
 		}
@@ -969,6 +968,9 @@
 	],
 	"file_history":
 	[
+		"/D/Karthik/GitHub/StotraSamhita/updateDropboxKindlePDFs.bat",
+		"/C/Users/Karthik/Dropbox/IITM/Students/Gayathri/Manuscripts/MinimalReactome/MinimalReactomev1.1.tex",
+		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas/TaittiriyaBrahmanam-Ashtakams.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/Aupasanam.tex",
 		"/D/Karthik/GitHub/kamakoti-panchangam/drik/ics/daily/Kanchi-2020-devanagari-daily.ics",
 		"/D/Karthik/GitHub/kamakoti-panchangam/drik/bin/write_daily_panchangam_ics.py",
@@ -979,7 +981,6 @@
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/DevaVai.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/ShriSuktam.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/MantraPushpam.tex",
-		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/ashtakas/TaittiriyaBrahmanam-Ashtakams.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/MahaNyasah.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/aruNaprashnaH.tex",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/mantras/DashaShantayah.tex",
@@ -1002,7 +1003,6 @@
 		"/C/Users/Karthik/Desktop/Junk/verse-checker/test/SBhuj.wiki",
 		"/C/Users/Karthik/Desktop/Junk/verse-checker/test/GBhuj.wiki",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/ganesha/GaneshaBhujangam.tex",
-		"/D/Karthik/GitHub/StotraSamhita/updateDropboxKindlePDFs.bat",
 		"/D/Karthik/GitHub/StotraSamhita/vedamantra-book/aranyakas/SahaVai.tex",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/compilations/nityaparayanam/vedamantras.tex",
 		"/D/Karthik/GitHub/StotraSamhita/stotra-sangrahah/stotras/hanuman/ApaduddharakaDwadashamukhaHanumanStotram.tex",
@@ -1095,12 +1095,11 @@
 		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_tex.py",
 		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/scripts/write_daily_panchangam_ics.py",
 		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/daily.py",
-		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/annual.py",
-		"/C/Users/Karthik/GitHub/kamakoti-panchangam/ashtanga/bin/2019_ashtanga_devanagari.txt"
+		"/C/Users/Karthik/GitHub/jyotisha/jyotisha/panchangam/spatio_temporal/annual.py"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -1115,6 +1114,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"सु॑नु",
 			"&",
 			"LOC",
 			"av{}",
@@ -1257,11 +1257,11 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Karthik/GitHub/StotraSamhita/updateDropboxKindlePDFs.bat",
+					"file": "vedamantrabook.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8705,
+						"buffer_size": 247,
 						"regions":
 						{
 						},
@@ -1269,7 +1269,7 @@
 						[
 							[
 								0,
-								8705
+								247
 							]
 						],
 						"settings":
@@ -1298,21 +1298,41 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1323,33 +1343,13 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_round_content"
 							],
-							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1363,7 +1363,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -1408,7 +1408,7 @@
 	"project": "vedamantrabook.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
