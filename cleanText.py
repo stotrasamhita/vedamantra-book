@@ -42,7 +42,7 @@ def main():
                         continue
                     trans_word_rep = re.sub('([kgcjtdpb])s', '\\1hs', trans_word)
                     if trans_word_rep != trans_word:
-                        print('%40s:%05d:: %s' % (file, i, trans_word))
+                        print('%40s:%05d:: %s' % (file, i + 1, trans_word))
 
 
 if __name__ == '__main__':
