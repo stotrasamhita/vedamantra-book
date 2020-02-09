@@ -41,6 +41,7 @@ def main():
                     if trans_word == word:
                         continue
                     trans_word_rep = re.sub('([kgcjtdpb])s', '\\1hs', trans_word)
+                    # trans_word_rep = re.sub('([kgcjtdpb])\\-s', '\\1h\\-s', trans_word)
                     if trans_word_rep != trans_word:
                         print('%40s:%05d:: %s' % (file, i + 1, trans_word))
 
