@@ -1,0 +1,61 @@
+% !TeX program = XeLaTeX
+% !TeX root = BrahmanamBook-kindle.tex
+\documentclass[oneside,12pt]{book}
+\usepackage{etoolbox}
+
+\newbool{kindle}
+\newbool{print}
+\setbool{kindle}{true}
+\setbool{print}{false}
+\ifbool{kindle}{\usepackage[paperwidth=126mm,paperheight=168mm,left=4mm,right=4mm,top=9mm,bottom=9mm,landscape]{geometry}
+\addtolength{\headsep}{-4mm}}{\usepackage[top=1.5cm, bottom=1.8cm, left=1.5cm, right=1.5cm,paperwidth=148mm,paperheight=210mm]{geometry}}
+
+\input{preamble}
+\newcommand{\chaptertitle}{}
+\renewcommand{\chapt}[1]{%
+\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+\renewcommand{\chaptertitle}{(#1)}
+}
+\lhead[\fancyplain{}{\pagenumfont\large\thepage}]
+   {\fancyplain{}{{\leftmark\ \chaptertitle}}}
+\rhead[\fancyplain{}{{\leftmark\ \chaptertitle)}}]
+   {\fancyplain{}{\pagenumfont\large\thepage}}
+\fancyfoot[C]{\mbox{}}
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+\ifbool{print}{%Margin changes for print
+\addtolength{\evensidemargin}{-0.5cm}
+\addtolength{\oddsidemargin}{0.5cm}}{}
+
+\begin{document}
+\newcommand{\titletext}{तैत्तिरीय\linebreak\mbox{}\linebreak ब्राह्मणम्}
+\input{frontmatter}
+
+
+\renewcommand{\partname}{विभागः}
+\renewcommand{\thepart}{{\dndigit{\arabic{part}}}}
+\Large
+% \setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
+%\setmainfont[Script=Devanagari,Mapping=tex-text,FakeStretch=1.08]{Sanskrit 2003}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Chandas}
+\setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
+%\setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
+\fontsize{19pt}{23pt}\selectfont
+%The following alters word spacing to ensure that words aren't too close to one another!
+\spaceskip=1\fontdimen2\font plus 1\fontdimen3\font minus 1.25\fontdimen4\font
+\input{brahmanas}
+\newpage\mbox{}
+\clearemptydoublepage
+\chapt{तैत्तिरीय आरण्यकम्}
+\input{"aranyakas/ArunaPrashnah.tex"}\clearpage
+\input{"aranyakas/SahaVai.tex"}\clearpage
+\input{"aranyakas/Chittissruk.tex"}\clearpage
+\input{"aranyakas/NamoVache.tex"}\clearpage
+\input{"aranyakas/DevaVai.tex"}\clearpage
+\input{"aranyakas/PareyuvaMsam.tex"}\clearpage
+\input{"aranyakas/Taittiriyopanishat.tex"}\clearpage
+\input{"aranyakas/Mahanarayanopanishat.tex"}\clearpage
+\newpage\mbox{}
+\clearemptydoublepage
+\input{"aranyakas/Kathaka.tex"}
+%\mbox{}\clearemptydoublepage
+\end{document}
