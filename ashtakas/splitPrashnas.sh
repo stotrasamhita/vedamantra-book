@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir -p .old/
 mv TaittiriyaBrahmanam-Ashtakam-*.tex TaittiriyaBrahmanam-[123]*.tex .old/
 awk 'BEGIN{c=0; p=0}
 /chapt/{c++;p=0}
