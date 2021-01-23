@@ -59,6 +59,7 @@ with open('TaittiriyaSamhita-Kandas.tex', 'w', errors='replace') as outfile:
             z = z.replace('॒ं', 'ं॒')
             z = z.replace('॑ं', 'ं॑')
             z = z.replace('ाम्᳚','ा᳚म्')
+            z = z.replace('ीम्᳚','ी᳚म्')
 
             for chunk, repl in REPL_TABLE:
                 z = z.replace(chunk, repl)
