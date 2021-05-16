@@ -9,6 +9,6 @@ awk 'BEGIN{c=0; p=0}
 # rm TaittiriyaSamhita-*0.tex
 cp  TaittiriyaSamhita-Kandas*.tex .old/
 cd .old/
-for x in *.tex; do diff $x ../$x -q && mv $x ../; done
+for x in *.tex; do diff $x ../$x -q && mv -v $x ../; done
 #for x in *.tex; do diff $x ../$x -qs && mv -v $x ../; done
 cd ..
