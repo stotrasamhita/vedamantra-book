@@ -11,10 +11,10 @@
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
 \setlength{\headheight}{28pt}
-\lhead[\fancyplain{}{\pagenumfont\large\thepage}]
-   {\fancyplain{}{\leftmark}}
-\rhead[\fancyplain{}{\leftmark}]
-   {\fancyplain{}{\pagenumfont\large\thepage}}
+\lhead[\fancyplain{}{\pagenumfont\small\thepage}]
+   {\fancyplain{}{\small\leftmark}}
+\rhead[\fancyplain{}{\small\leftmark}]
+   {\fancyplain{}{\pagenumfont\small\thepage}}
 \cfoot{}
 \fancyfoot[C]{\mbox{}}
 \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
@@ -32,26 +32,25 @@
 %{2.3ex \@plus.2ex}%
 {10pt}
 {2pt}
-{\centering\normalfont\LARGE\bfseries}}
+{\centering\normalfont\large\bfseries}}
 
 \renewcommand\chapter{\ifbool{kindle}{\newpage}{}\resetShloka\@startsection {chapter}{1}{\z@}%
 {10pt}
 {2pt}
-{\normalfont\LARGE\bfseries\filcenter}}
+{\normalfont\Large\bfseries\filcenter}}
 \makeatother
 
 \setcounter{secnumdepth}{-1}
 %for weird reasons this does not bookmark the section start, but the start of text in the section!!!
 %\renewcommand\thesection{}
 \renewcommand{\sectionmark}[1]{%
-\markboth{\large #1}{}}
+\markboth{#1}{}}
 \renewcommand{\subsectionmark}[1]{%
-\markboth{\large #1}{}}
+\markboth{#1}{}}
 \renewcommand{\chaptermark}[1]{%
-\markboth{\large #1}{}}
+\markboth{#1}{}}
 
 \addtolength{\parskip}{4pt}
-%\addtolength{\headsep}{10pt}
 \setlength{\columnseprule}{1pt}
 \setlength{\columnsep}{30pt}
 
