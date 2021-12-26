@@ -21,15 +21,15 @@
 \RequirePackage{multicol}
 
 
-\newcommand{\pagenumfont}{\fontspec{Candara}}
+\newcommand{\pagenumfont}{\fontspec[Numbers=Lining]{Noto Sans}}
 
 \RequirePackage[titles]{tocloft}
 \renewcommand\contentsname{अनुक्रमणिका}
 \renewcommand{\partname}{विभागः}
 \renewcommand{\thepart}{{\dndigit{\arabic{part}}}}
-\renewcommand{\cftchappagefont}{\fontspec{Candara Bold}}
-\renewcommand{\cftpartpagefont}{\fontspec{Candara Bold}}
-\renewcommand{\cftsecpagefont}{\fontspec{Candara}}
+\renewcommand{\cftchappagefont}{\fontspec[Numbers=Lining]{Noto Sans Bold}}
+\renewcommand{\cftpartpagefont}{\fontspec[Numbers=Lining]{Noto Sans Bold}}
+\renewcommand{\cftsecpagefont}{\fontspec[Numbers=Lining]{Noto Sans}}
 \renewcommand{\cftpartfont}{\LARGE\fontspec[Script=Devanagari]{Sanskrit 2003}}
 \renewcommand{\cftchapfont}{\Large\fontspec[Script=Devanagari]{Sanskrit 2003}}
 \renewcommand{\cftsecfont}{\fontspec[Script=Devanagari]{Sanskrit 2003}}
@@ -404,7 +404,7 @@
 \newcommand{\dnsub}[1]{
 \medskip
 %\centerline{\Large\bfseries ॥#1॥ }
-\centerline{\Large\fontspec[FakeBold=0.125,FakeStretch=1.08,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003} ॥#1॥ }\nopagebreak[4]
+\centerline{\large\fontspec[FakeBold=0.125,FakeStretch=1.08,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003} ॥#1॥ }\nopagebreak[4]
 \smallskip
 }
 
