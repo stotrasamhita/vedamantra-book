@@ -1,14 +1,17 @@
 % !TeX program = XeLaTeX
 % !TeX root = SamhitaBook-kindle.tex
-\documentclass[oneside,12pt]{book}
+\documentclass[oneside,14pt]{book}
 \usepackage{etoolbox}
+\usepackage{extsizes}
 
 \newbool{kindle}
 \newbool{print}
 \setbool{kindle}{true}
 \setbool{print}{false}
-\ifbool{kindle}{\usepackage[paperwidth=126mm,paperheight=168mm,left=4mm,right=4mm,top=9mm,bottom=9mm]{geometry}
-\addtolength{\headsep}{-4mm}}{\usepackage[top=1.5cm, bottom=1.8cm, left=1.5cm, right=1.5cm,paperwidth=148mm,paperheight=210mm]{geometry}}
+\ifbool{kindle}{\usepackage[paperwidth=104.5mm,paperheight=139.5mm,left=3mm,right=3mm,top=9mm,bottom=9mm]{geometry}
+\addtolength{\headsep}{-8mm}
+\addtolength{\footskip}{-4mm}
+\addtolength{\textheight}{8mm}}{\usepackage[top=1.5cm, bottom=1.8cm, left=1.5cm, right=1.5cm,paperwidth=148mm,paperheight=210mm]{geometry}}
 
 \input{preamble}
 \newcommand{\chaptertitle}{}
@@ -16,10 +19,10 @@
 \chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
 \renewcommand{\chaptertitle}{(#1)}
 }
-\lhead[\fancyplain{}{\pagenumfont\large\thepage}]
+\lhead[\fancyplain{}{\pagenumfont \thepage}]
    {\fancyplain{}{{\leftmark\ \chaptertitle}}}
 \rhead[\fancyplain{}{{\leftmark\ \chaptertitle)}}]
-   {\fancyplain{}{\pagenumfont\large\thepage}}
+   {\fancyplain{}{\pagenumfont \thepage}}
 \fancyfoot[C]{\mbox{}}
 \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
 \ifbool{print}{%Margin changes for print
@@ -33,13 +36,9 @@
 
 \renewcommand{\partname}{विभागः}
 \renewcommand{\thepart}{{\dndigit{\arabic{part}}}}
-\Large
-% \setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
-%\setmainfont[Script=Devanagari,Mapping=tex-text,FakeStretch=1.08]{Sanskrit 2003}
-%\setmainfont[Script=Devanagari,Mapping=tex-text]{Chandas}
+% \large
 \setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
-%\setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
-\fontsize{19pt}{23pt}\selectfont
+% \fontsize{19pt}{23pt}\selectfont
 %The following alters word spacing to ensure that words aren't too close to one another!
 \spaceskip=1\fontdimen2\font plus 1\fontdimen3\font minus 1.25\fontdimen4\font
 \setcounter{page}{0}
@@ -53,14 +52,7 @@
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
 \ifthenelse{\equal{#1}{}}{\mbox{}}{{\small #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
 }
-\newcommand{\prashnaend}[1]{\fontsize{12pt}{15pt}\selectfont
-#1}
-% \newcommand{\prashnaend}[5]{\fontsize{12pt}{15pt}\selectfont
-% {#1}\\#2\\#3%
-% \fontsize{19pt}{23pt}\selectfont
-% \begin{center}
-% #4\\॥#5
-% \end{center}}
+\newcommand{\prashnaend}[1]{\scriptsize #1}
 \input{"kandas/TaittiriyaSamhita-Kandas.tex"}
 \clearemptydoublepage
 %\mbox{}\clearemptydoublepage

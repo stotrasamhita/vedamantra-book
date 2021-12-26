@@ -1,19 +1,22 @@
-\documentclass[oneside,12pt,draft]{book}
+\documentclass[oneside,14pt]{book}
+\usepackage{extsizes}
 \usepackage{shloka}
 
 %%% PAGE SIZE and MARGINS %%%
-\usepackage[paperwidth=126mm,paperheight=168mm,left=4mm,right=4mm,top=9mm,bottom=10mm]{geometry}
-\addtolength{\headsep}{-4mm}
+\usepackage[paperwidth=104.5mm,paperheight=139.5mm,left=3mm,right=3mm,top=9mm,bottom=9mm]{geometry}
+\addtolength{\headsep}{-8mm}
+\addtolength{\footskip}{-4mm}
+\addtolength{\textheight}{8mm}
 \setmainfont[Script=Devanagari]{Siddhanta}
 
 %%% HEADERS and FOOTERS %%%
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
 \setlength{\headheight}{28pt}
-\lhead[\fancyplain{}{\pagenumfont\large\thepage}]
+\lhead[\fancyplain{}{\pagenumfont\thepage}]
    {\fancyplain{}{\leftmark}}
 \rhead[\fancyplain{}{\leftmark}]
-   {\fancyplain{}{\pagenumfont\large\thepage}}
+   {\fancyplain{}{\pagenumfont\thepage}}
 \cfoot{}
 \fancyfoot[C]{\mbox{}}
 \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
@@ -31,23 +34,23 @@
 %{2.3ex \@plus.2ex}%
 {10pt}
 {2pt}
-{\centering\normalfont\LARGE\bfseries}}
+{\centering\normalfont\large\bfseries}}
 
 \renewcommand\chapter{\resetShloka\@startsection {chapter}{1}{\z@}%
 {10pt}
 {2pt}
-{\normalfont\LARGE\bfseries\filcenter}}
+{\normalfont\Large\bfseries\filcenter}}
 \makeatother
 
 \setcounter{secnumdepth}{-1}
 %for weird reasons this does not bookmark the section start, but the start of text in the section!!!
 %\renewcommand\thesection{}
 \renewcommand{\sectionmark}[1]{%
-\markboth{\large #1}{}}
+\markboth{#1}{}}
 \renewcommand{\subsectionmark}[1]{%
-\markboth{\large #1}{}}
+\markboth{#1}{}}
 \renewcommand{\chaptermark}[1]{%
-\markboth{\large #1}{}}
+\markboth{#1}{}}
 
 \addtolength{\parskip}{4pt}
 %\addtolength{\headsep}{10pt}
@@ -78,8 +81,8 @@ urlcolor=blue				% colour of external links
 \newcommand{\sav}{\char"093D\char"E007}
 \newcommand{\sG}{\char"0919\char"094D\char"E007}
 \begin{document}
-\Large\setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
-\fontsize{19pt}{23pt}\selectfont
+\setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
+% \fontsize{19pt}{23pt}\selectfont
 %The following alters word spacing to ensure that words aren't too close to one another!
 \spaceskip=1\fontdimen2\font plus 1\fontdimen3\font minus 1.25\fontdimen4\font
 % \setlength{\parindent}{0pt}
@@ -92,9 +95,8 @@ urlcolor=blue				% colour of external links
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
 \newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\small #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
 }
-\newcommand{\prashnaend}[5]{\fontsize{12pt}{15pt}\selectfont
-{#1}\\#2\\#3%
-\fontsize{19pt}{23pt}\selectfont
+\newcommand{\prashnaend}[5]{{\scriptsize
+{#1}\\#2\\#3}%
 \begin{center}
 #4\\॥#5
 \end{center}}
