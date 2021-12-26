@@ -8,12 +8,12 @@
 \makeatother
 \newcounter{anuvakam}
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
-\newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\small #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
+\newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
 }
-\newcommand{\prashnaend}[5]{\fontsize{12pt}{15pt}\selectfont
-{#1}\\#2\\#3%
-\fontsize{19pt}{23pt}\selectfont
+\newcommand{\prashnaend}[5]{{{\scriptsize
+{#1}\\#2\\#3}%
+% \fontsize{19pt}{23pt}\selectfont
 \begin{center}
 #4\\॥#5
-\end{center}}
+\end{center}}}
 \input{"ashtakas/TaittiriyaBrahmanam-Ashtakams.tex"}
