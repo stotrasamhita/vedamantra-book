@@ -71,15 +71,15 @@ urlcolor=blue				% colour of external links
 \vbadness=10000
 \hfuzz=6pt
 
-\newcommand{\ar}{\char"0930\char"094D\char"E009}
-\newcommand{\ur}{\char"0930\char"094D\char"200C}
-\newcommand{\sr}{\char"0930\char"094D\char"E007}
-\newcommand{\sn}{\char"0928\char"094D\char"E007}
-\newcommand{\snn}{\char"0928\char"094D\char"0928\char"094D\char"E007}
-\newcommand{\an}{\char"0928\char"094D\char"E009}
-\newcommand{\aav}{\char"093D\char"E009}
-\newcommand{\sav}{\char"093D\char"E007}
-\newcommand{\sG}{\char"0919\char"094D\char"E007}
+% \newcommand{\ar}{\char"0930\char"094D\char"E009}
+% \newcommand{\ur}{\char"0930\char"094D\char"200C}
+% \newcommand{\sr}{\char"0930\char"094D\char"E007}
+% \newcommand{\sn}{\char"0928\char"094D\char"E007}
+% \newcommand{\snn}{\char"0928\char"094D\char"0928\char"094D\char"E007}
+% \newcommand{\an}{\char"0928\char"094D\char"E009}
+% \newcommand{\aav}{\char"093D\char"E009}
+% \newcommand{\sav}{\char"093D\char"E007}
+% \newcommand{\sG}{\char"0919\char"094D\char"E007}
 \begin{document}
 \setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
 % \fontsize{19pt}{23pt}\selectfont
@@ -93,7 +93,7 @@ urlcolor=blue				% colour of external links
 \makeatother
 \newcounter{anuvakam}
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
-\ifthenelse{\equal{#1}{}}{\mbox{}}{{\small #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
+\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
 }
 % \newcommand{\prashnaend}[5]{\fontsize{12pt}{15pt}\selectfont
 % {#1}\\#2\\#3%
