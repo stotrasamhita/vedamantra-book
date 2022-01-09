@@ -42,7 +42,8 @@
 \newcount\tempone \newcount\temptwo
 \newcommand{\devanumber}[1]{%
 \num=#1\devanumberrecurse}
-
+\newcommand\ul[1]{%
+\raisebox{-3pt}{\hspace{0.25ex}\underline{\hspace{-0.25ex}\raisebox{3pt}{\smash{{#1}}}\hspace{-0.25ex}}}\hspace{0.25ex}}
 \newcommand{\devanumberrecurse}{%
 {\tempone=\num
 %  \showthe\tempone\ %
