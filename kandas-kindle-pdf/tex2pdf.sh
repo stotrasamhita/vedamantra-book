@@ -1,5 +1,5 @@
 #!/bin/bash
-find ../kandas -maxdepth 1 -name "*.tex" -newer TaittiriyaSamhita-Kandas.pdf | while read fpath
+find ../kandas -maxdepth 1 -name "*.tex" -newer TaittiriyaSamhita-Kandas.pdf | grep -v R0 | grep -v orig | while read fpath
 do
 fname=`basename $fpath`
 echo "---------------------------------------------------------------"
