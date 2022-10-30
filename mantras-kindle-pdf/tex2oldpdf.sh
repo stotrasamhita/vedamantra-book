@@ -1,5 +1,6 @@
 #!/bin/bash
-find ../mantras -name "*.tex" | while read fpath
+# set -x
+find ../mantras -name "RudraP*.tex" | while read fpath
 do
 fname=`basename $fpath`
 echo "---------------------------------------------------------------"
@@ -7,11 +8,12 @@ echo "File path         : $fpath"
 jobname=`echo $fpath | sed 's/.tex//;s@.*mantras/@@'`
 echo "PDF target        : $jobname.pdf"
 mkdir -p `dirname $jobname`
-if [[ $fpath -nt $jobname.pdf || mantra-oldkindle-template.tex -nt $jobname-old.pdf ]]
+if [[ $fpath -nt $jobname-old.pdf || mantra-oldkindle-template.tex -nt $jobname-old.pdf ]]
 then
+    echo $fpath
 echo Rebuilding $jobname.pdf... > /dev/stderr
 echo Rebuilding $jobname.pdf...
-cat mantra-oldkindle-template.tex | sed "s@FPATH@$fpath@" | xelatex -jobname=$jobname-old
+cat mantra-oldkindle-template.tex | sed "s@FPATH@$fpath@" | xelatex -jobname="$jobname-old"
 else
 echo PDF up-to-date.
 fi
