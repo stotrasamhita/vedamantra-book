@@ -3,7 +3,8 @@ import sys
 import indic_transliteration.sanscript as sanscript
 import re
 
-repl_list = [('ष्ट्य', 'ष्ट'), ('ष्ठ्य', 'ष्ठ')]
+# repl_list = [('ष्ट्य', 'ष्ट'), ('ष्ठ्य', 'ष्ठ')]
+repl_list = [('ष्ट्य', 'ट्य'), ('ष्ठ्य', 'ठ्य')]
 for file in sys.argv[1:]:
     sys.stderr.write('Updating %s\n' % (file))
     with open(file, 'r') as in_f:
