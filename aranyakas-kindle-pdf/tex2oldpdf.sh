@@ -9,8 +9,8 @@ echo "PDF target        : $jobname.pdf"
 mkdir -p `dirname $jobname`
 if [[ $fpath -nt $jobname.pdf || aranyaka-oldkindle-template.tex -nt $jobname-old.pdf ]]
 then
-echo Rebuilding $jobname.pdf... > /dev/stderr
-echo Rebuilding $jobname.pdf...
+echo Rebuilding $jobname-old.pdf... > /dev/stderr
+echo Rebuilding $jobname-old.pdf...
 cat aranyaka-oldkindle-template.tex | sed "s@FPATH@$fpath@" | xelatex -jobname=$jobname-old
 else
 echo PDF up-to-date.
