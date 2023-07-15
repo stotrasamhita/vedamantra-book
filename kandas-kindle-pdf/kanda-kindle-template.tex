@@ -14,10 +14,15 @@
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
 \setlength{\headheight}{28pt}
-\lhead[\fancyplain{}{\pagenumfont\thepage}]
-   {\fancyplain{}{\leftmark}}
-\rhead[\fancyplain{}{\leftmark}]
-   {\fancyplain{}{\pagenumfont\thepage}}
+\newcommand{\chaptertitle}{}
+\renewcommand{\chapt}[1]{%
+% \chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+\renewcommand{\chaptertitle}{(#1)}
+}
+\lhead[\fancyplain{}{\pagenumfont \thepage}]
+   {\fancyplain{}{{\leftmark\ \chaptertitle}}}
+\rhead[\fancyplain{}{{\leftmark\ \chaptertitle)}}]
+   {\fancyplain{}{\pagenumfont \thepage}}
 \cfoot{}
 \fancyfoot[C]{\mbox{}}
 \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
@@ -94,7 +99,8 @@ urlcolor=blue				% colour of external links
 \makeatother
 \newcounter{anuvakam}
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
-\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
+\baselineskip=12pt\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{1.6pt}\raisebox{-3pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
+\vspace{-1pt}
 }
 % \newcommand{\prashnaend}[5]{\fontsize{12pt}{15pt}\selectfont
 % {#1}\\#2\\#3%
@@ -102,12 +108,11 @@ urlcolor=blue				% colour of external links
 % \begin{center}
 % #4\\॥#5
 % \end{center}}
-\newcommand{\prashnaend}[1]{\scriptsize #1}
-\chapt{तैत्तिरीय संहिता}
+\newcommand{\prashnaend}[1]{\scriptsize\baselineskip=4pt #1}
 \input{"FPATH"}
 \vfill
 \hrule
-\footnotesize
+\scriptsize\baselineskip=8pt
 \urlstyle{sf}
 \textsf{%
 This PDF was downloaded from \url{http://stotrasamhita.github.io}.\\[1ex]
