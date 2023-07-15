@@ -92,8 +92,9 @@ urlcolor=blue				% colour of external links
   \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
 \makeatother
 \newcounter{anuvakam}
-\newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
-\newline\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{2.5pt}\raisebox{-4pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
+\newcommand{\anuvakamend}[1][]{\baselineskip=12pt\refstepcounter{anuvakam}%[-1ex]
+\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{1.6pt}\raisebox{-3pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
+\vspace{-1pt}
 }
 \chapt{तैत्तिरीय आरण्यकम्}
 \input{"FPATH"}
