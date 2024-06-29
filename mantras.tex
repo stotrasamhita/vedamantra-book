@@ -25,7 +25,20 @@
 \input{"mantras/NakshatraSuktam.tex"}
 \input{"mantras/Ganapatyatharvashirsham.tex"}
 \input{"mantras/MrtyunjayaHomaMantrah.tex"}
+\begingroup
+\newcommand{\chaptertitle}{}
+\renewcommand{\chapt}[1]{%
+\chapter[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+\renewcommand{\chaptertitle}{(#1)}
+}
+\lhead[\fancyplain{}{\pagenumfont \thepage}]
+   {\fancyplain{}{{\leftmark\ \chaptertitle}}}
+\rhead[\fancyplain{}{{\leftmark\ \chaptertitle)}}]
+   {\fancyplain{}{\pagenumfont \thepage}}
+\fancyfoot[C]{\mbox{}}
+
 \input{"mantras/MahaNyasah.tex"}
+\endgroup
 \input{"mantras/RudraPadaPatha.tex"}
 \input{"mantras/MantraPushpam.tex"}
 \input{"mantras/DashaShantayah.tex"}
