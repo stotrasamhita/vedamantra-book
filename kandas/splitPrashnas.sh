@@ -8,7 +8,7 @@ awk 'BEGIN{c=0; p=0}
 /chapt/{chap=$0}
 /sect/{print chap > "TaittiriyaSamhita-" c "-" p ".tex"}
 /sect/,/%%% END PRASHNA/{print > "TaittiriyaSamhita-" c "-" p ".tex"}' TaittiriyaSamhita-Kandas.tex
-rm TaittiriyaSamhita-?-0.tex
+#rm TaittiriyaSamhita-?-0.tex
 # cp  TaittiriyaSamhita-Kandas*.tex .old/
 cd .old/
 for x in *.tex; do diff $x ../$x -q && mv $x ../; done
