@@ -53,7 +53,12 @@
 \baselineskip=12pt\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{1.6pt}\raisebox{-3pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
 \vspace{-1pt}
 }
-\newcommand{\prashnaend}[1]{\scriptsize #1}
+\newcommand{\prashnaend}[5]{\begingroup\scriptsize
+{#1}\\#2\\#3%
+\endgroup
+\begin{center}
+#4\\॥#5
+\end{center}}
 \input{"kandas/TaittiriyaSamhita-Kandas.tex"}
 \clearemptydoublepage
 %\mbox{}\clearemptydoublepage
