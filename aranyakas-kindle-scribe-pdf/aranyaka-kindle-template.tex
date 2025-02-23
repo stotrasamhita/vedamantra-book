@@ -1,0 +1,109 @@
+\documentclass[oneside,14pt]{book}
+\usepackage{extsizes}
+\usepackage{shloka}
+\usepackage{fontawesome}
+%%% PAGE SIZE and MARGINS %%%
+\usepackage[paperwidth=140mm,paperheight=185mm,left=3mm,right=3mm,top=9mm,bottom=9mm]{geometry}
+\addtolength{\headsep}{-8mm}
+\addtolength{\footskip}{-4mm}
+\addtolength{\textheight}{8mm}
+\setmainfont[Script=Devanagari]{Siddhanta}
+
+%%% HEADERS and FOOTERS %%%
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\setlength{\headheight}{28pt}
+\lhead[\fancyplain{}{\pagenumfont\thepage}]
+   {\fancyplain{}{\leftmark}}
+\rhead[\fancyplain{}{\leftmark}]
+   {\fancyplain{}{\pagenumfont\thepage}}
+\cfoot{}
+\fancyfoot[C]{\mbox{}}
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+\fancypagestyle{fancyplain}{ %
+\fancyhf{} % remove everything
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+\renewcommand{\footrulewidth}{0pt}
+\cfoot{\pagenumfont\thepage}}
+
+%%% SECTIONS and CHAPTERS %%%
+\makeatletter
+\renewcommand\section{\resetShloka\@startsection {section}{1}{\z@}%
+%{2.3ex \@plus.2ex}%
+%{-3.5ex \@plus -1ex \@minus -.2ex}%
+%{2.3ex \@plus.2ex}%
+{10pt}
+{2pt}
+{\centering\normalfont\large\bfseries}}
+
+\renewcommand\chapter{\resetShloka\@startsection {chapter}{1}{\z@}%
+{10pt}
+{2pt}
+{\normalfont\Large\bfseries\filcenter}}
+\makeatother
+
+\setcounter{secnumdepth}{-1}
+%for weird reasons this does not bookmark the section start, but the start of text in the section!!!
+%\renewcommand\thesection{}
+\renewcommand{\sectionmark}[1]{%
+\markboth{#1}{}}
+\renewcommand{\subsectionmark}[1]{%
+\markboth{#1}{}}
+\renewcommand{\chaptermark}[1]{%
+\markboth{#1}{}}
+
+\addtolength{\parskip}{4pt}
+%\addtolength{\headsep}{10pt}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{30pt}
+% \setlength{\parindent}{0pt}
+
+%%% HYPERLINKS %%%
+\usepackage[bookmarks=true,bookmarksopen=true,xetex,colorlinks=true,
+linkcolor=black,			% colour of internal links
+citecolor=cyan,				% colour of links to bibliography
+filecolor=magenta,			% colour of file links
+urlcolor=blue				% colour of external links
+]{hyperref}
+
+%%% MISCELLANEOUS %%%
+\hbadness=10000
+\vbadness=10000
+\hfuzz=6pt
+
+% \newcommand{\ar}{\char"0930\char"094D\char"E009}
+% \newcommand{\ur}{\char"0930\char"094D\char"200C}
+% \newcommand{\sr}{\char"0930\char"094D\char"E007}
+% \newcommand{\sn}{\char"0928\char"094D\char"E007}
+% \newcommand{\snn}{\char"0928\char"094D\char"0928\char"094D\char"E007}
+% \newcommand{\an}{\char"0928\char"094D\char"E009}
+% \newcommand{\aav}{\char"093D\char"E009}
+% \newcommand{\sav}{\char"093D\char"E007}
+% \newcommand{\sG}{\char"0919\char"094D\char"E007}
+\begin{document}
+\setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
+% \fontsize{19pt}{23pt}\selectfont
+%The following alters word spacing to ensure that words aren't too close to one another!
+\spaceskip=1\fontdimen2\font plus 1\fontdimen3\font minus 1.25\fontdimen4\font
+% \setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+%\renewcommand{\sect}[1]{\chapter[#1]{॥#1॥}}
+\makeatletter
+  \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+\newcounter{anuvakam}
+\newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
+\newline\baselineskip=12pt\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{1.6pt}\raisebox{-3pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
+\vspace{-1pt}
+}
+\chapt{तैत्तिरीय आरण्यकम्}
+\input{"FPATH"}
+\vfill
+\centering
+\rule{0.8\textwidth}{0.6pt}
+
+\footnotesize
+\urlstyle{sf}\sffamily
+\faFilePdfO~generated on \textbf{\today}\\[1ex]
+Downloaded from \faGlobe{}~\url{http://stotrasamhita.github.io}~|~\href{https://github.com/StotraSamhita}{\faGithubSquare{}~StotraSamhita}~|~\href{https://stotrasamhita.github.io/about/}{Credits}
+\end{document}
