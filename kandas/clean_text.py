@@ -49,8 +49,8 @@ with open('TaittiriyaSamhita-Kandas.tex', 'w', errors='replace') as outfile:
                         z = z.replace('॑ष्ष' + maatra, 'ः॑ ष' + maatra)
                         z = z.replace('ष्ष' + maatra, 'ः ष' + maatra)
             
-            for swara in ['॑', '_', '᳚', '']:
-                z = z.replace(swara + 'न्दे॒व', 'ं' + swara + ' दे॒व')
+            # for swara in ['॑', '_', '᳚', '']:
+            #     z = z.replace(swara + 'न्दे॒व', 'ं' + swara + ' दे॒व')
 
             # for text in ['न्दैव्य', 'न्दृꣳ', 'न्दृ॒ꣳ॒', 'न्धत्त', 'ञ्ज्यो', 'म्प्रो', 'म्प॒वि', 'म्प्रति', 'ङ्ग्र॑थ्ना',
             #  'म्पू॒षा', 'न्धूर्व', 'न्धू᳚र्व', 'ञ्जे᳚ष्म', 'ञ्जहि', 'न्तप॑सा', 'म्मख', 'ङ्गृह्ण', 'ञ्जनम्', 'ञ्जनय', 'ञ्जन॑य']:
