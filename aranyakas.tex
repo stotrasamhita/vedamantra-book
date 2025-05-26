@@ -8,9 +8,11 @@
   \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
 \makeatother
 \newcounter{anuvakam}
+\newcounter{panchadi}
+\newcommand{\ip}{\stepcounter{panchadi}}
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
-\newline\baselineskip=12pt\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥}}\nolinebreak[4]\vhrulefill{1.6pt}\raisebox{-3pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
-\vspace{-1pt}
+\newline\baselineskip=12pt\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥\devanumber{\arabic{panchadi}}॥}}\nolinebreak[4]\vhrulefill{1.6pt}\raisebox{-3pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
+\vspace{-1pt}\setcounter{panchadi}{0}
 }
 \chapt{तैत्तिरीय आरण्यकम्}
 \input{"aranyakas/ArunaPrashnah.tex"}\clearpage
