@@ -3,11 +3,11 @@ mkdir -p .old/
 mv TaittiriyaSamhita-Kandam-*.tex TaittiriyaSamhita-[1234567]*.tex .old/
 awk 'BEGIN{c=0; p=0}
 /chapt/{c++;p=0}
-/sect/{p++;}
+/\\sect/{p++;}
 /chapt/,/%%% END KANDAM/{print > "TaittiriyaSamhita-Kandam-" c ".tex"}
 /chapt/{chap=$0}
-/sect/{print chap > "TaittiriyaSamhita-" c "-" p ".tex"}
-/sect/,/%%% END PRASHNA/{print > "TaittiriyaSamhita-" c "-" p ".tex"}' TaittiriyaSamhita-Kandas.tex
+/\\sect/{print chap > "TaittiriyaSamhita-" c "-" p ".tex"}
+/\\sect/,/%%% END PRASHNA/{print > "TaittiriyaSamhita-" c "-" p ".tex"}' TaittiriyaSamhita-Kandas.tex
 #rm TaittiriyaSamhita-?-0.tex
 # cp  TaittiriyaSamhita-Kandas*.tex .old/
 cd .old/
