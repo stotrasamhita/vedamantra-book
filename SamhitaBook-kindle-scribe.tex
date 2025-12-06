@@ -50,16 +50,20 @@
 \makeatother
 \newcounter{anuvakam}
 \newcounter{panchadi}
-\newcommand{\ip}{\stepcounter{panchadi}}
+\newcounter{panchadiKanda}
+\newcounter{panchadiAdi}
+\newcommand{\ip}{\stepcounter{panchadi}\stepcounter{panchadiAdi}\stepcounter{panchadiKanda}}
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
 \baselineskip=12pt\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥\devanumber{\arabic{panchadi}}॥}}\nolinebreak[4]\vhrulefill{1.6pt}\raisebox{-3pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
 \vspace{-1pt}\setcounter{panchadi}{0}
 }
+\newcommand{\kandaend}{\setcounter{panchadiKanda}{0}}
 \newcommand{\prashnaend}[5]{\begingroup\scriptsize
 {#1}\\#2\\#3%
 \endgroup
 \begin{center}
 #4॥\\#5
+\par काण्डे दशिन्यः—\devanumber{\arabic{panchadiKanda}} \hspace{4ex} आदितः दशिन्यः—\devanumber{\arabic{panchadiAdi}}
 
 \closesection
 
