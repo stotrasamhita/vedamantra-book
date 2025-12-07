@@ -7,6 +7,8 @@
 \newbool{print}
 \setbool{kindle}{false}
 \setbool{print}{true}
+\newbool{aranyakabook}
+\setbool{aranyakabook}{false} % Will suppress brahmana counts etc. if true
 \ifbool{kindle}{\usepackage[paperwidth=126mm,paperheight=168mm,left=5mm,right=5mm,top=15mm,bottom=20mm]{geometry}}{\usepackage[top=1.5cm, bottom=1.8cm, left=1.5cm, right=1.5cm,paperwidth=148mm,paperheight=210mm]{geometry}}
 
 \input{preamble}
@@ -21,18 +23,24 @@
 
 \renewcommand{\partname}{विभागः}
 \renewcommand{\thepart}{{\dndigit{\arabic{part}}}}
-\Large
-% \setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
-%\setmainfont[Script=Devanagari,Mapping=tex-text,FakeStretch=1.08]{Sanskrit 2003}
-%\setmainfont[Script=Devanagari,Mapping=tex-text]{Chandas}
+% \large
 \setmainfont[Script=Devanagari,Mapping=tex-text]{Siddhanta}
-%\setmainfont[Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}
-\fontsize{19pt}{23pt}\selectfont
+% \fontsize{14pt}{16pt}\selectfont
 %The following alters word spacing to ensure that words aren't too close to one another!
 \spaceskip=1\fontdimen2\font plus 1\fontdimen3\font minus 1.25\fontdimen4\font
 \input{brahmanas}
 \newpage\mbox{}
 \clearemptydoublepage
+\renewcommand{\prashnaend}[2]{{
+\begin{center}
+#1\\॥#2
+\par आरण्यके आदितः दशिन्यः—\devanumber{\arabic{panchadiKanda}} \hspace{4ex} ब्राह्मणे आदितः दशिन्यः—\devanumber{\arabic{panchadiAdi}}
+
+\closesectionlink
+
+\end{center}}%
+}
+\setcounter{panchadiKanda}{0}
 \chapt{तैत्तिरीय आरण्यकम्}
 \input{"aranyakas/ArunaPrashnah.tex"}\clearpage
 \input{"aranyakas/SahaVai.tex"}\clearpage
@@ -44,6 +52,16 @@
 \input{"aranyakas/Mahanarayanopanishat.tex"}\clearpage
 \newpage\mbox{}
 \clearemptydoublepage
+\setcounter{panchadiKanda}{0}
+\renewcommand{\prashnaend}[2]{{
+\begin{center}
+#1\\॥#2
+\par काठके आदितः दशिन्यः—\devanumber{\arabic{panchadiKanda}} \hspace{4ex} ब्राह्मणे आदितः दशिन्यः—\devanumber{\arabic{panchadiAdi}}
+
+\closesectionlink
+
+\end{center}}%
+}
 \input{"aranyakas/Kathaka.tex"}
 %\mbox{}\clearemptydoublepage
 \end{document}

@@ -9,10 +9,22 @@
 \makeatother
 \newcounter{anuvakam}
 \newcounter{panchadi}
-\newcommand{\ip}{\stepcounter{panchadi}}
+\newcounter{panchadiAdi}
+\newcommand{\ip}{\stepcounter{panchadi}\stepcounter{panchadiAdi}}
 \newcommand{\anuvakamend}[1][]{\refstepcounter{anuvakam}%[-1ex]
 \newline\baselineskip=12pt\ifthenelse{\equal{#1}{}}{\mbox{}}{{\scriptsize #1॥\devanumber{\arabic{panchadi}}॥}}\nolinebreak[4]\vhrulefill{1.6pt}\raisebox{-3pt}{\bfseries{[\devanumber{\arabic{anuvakam}}]}}%\hrulefill
 \vspace{-1pt}\setcounter{panchadi}{0}
+}
+\ifbool{aranyakabook}{\newcommand{\prashnaend}[2]{}}{
+\newcommand{\prashnaend}[2]{{
+\begin{center}
+#1\\॥#2
+\par आरण्यके आदितः दशिन्यः—\devanumber{\arabic{panchadiKanda}} \hspace{4ex} ब्राह्मणे आदितः दशिन्यः—\devanumber{\arabic{panchadiAdi}}
+
+\closesectionlink
+
+\end{center}}%
+}
 }
 \chapt{तैत्तिरीय आरण्यकम्}
 \input{"aranyakas/ArunaPrashnah.tex"}\clearpage
@@ -23,4 +35,14 @@
 \input{"aranyakas/PareyuvaMsam.tex"}\clearpage
 \input{"aranyakas/Taittiriyopanishat.tex"}\clearpage
 \input{"aranyakas/Mahanarayanopanishat.tex"}\clearpage
+
+\ifbool{aranyakabook}{}{\renewcommand{\prashnaend}[2]{{
+\begin{center}
+#1\\॥#2
+\par काठके दशिन्यः—\devanumber{\arabic{panchadiKanda}} \hspace{4ex} ब्राह्मणे आदितः दशिन्यः—\devanumber{\arabic{panchadiAdi}}
+
+\end{center}}%
+}
+}
+
 \input{"aranyakas/Kathaka.tex"}

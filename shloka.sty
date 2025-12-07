@@ -391,6 +391,7 @@
 
 \newcommand{\sect}[1]{%
 \section[#1]{\fontspec[FakeBold=1.0,FakeStretch=1.0,Script=Devanagari,Mapping=tex-text]{Sanskrit 2003}॥#1॥}%
+\xdef\lastsectionhref{\@currentHref}% remember link anchor
 }
 
 \newcommand{\chapt}[1]{%
@@ -417,4 +418,10 @@
 
 \RequirePackage{bbding}
 \newcommand{\closesection}{\medskip\centerline{\EightFlowerPetal\EightFlowerPetal\EightFlowerPetal}}
+\newcommand{\closesectionlink}{
+  \medskip
+  \centerline{%
+    \hyperlink{\lastsectionhref}{\EightFlowerPetal}%
+  }%
+}
 \newcommand{\closesub}{\medskip\centerline{\EightFlowerPetal}}

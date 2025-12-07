@@ -7,6 +7,8 @@
 \newbool{print}
 \setbool{kindle}{true}
 \setbool{print}{false}
+\newbool{aranyakabook}
+\setbool{aranyakabook}{true} % Will suppress brahmana counts etc. if true
 \ifbool{kindle}{\usepackage[paperwidth=126mm,paperheight=168mm,left=4mm,right=4mm,top=9mm,bottom=9mm,landscape]{geometry}
 \addtolength{\headsep}{-4mm}}{\usepackage[top=1.5cm, bottom=1.8cm, left=1.5cm, right=1.5cm,paperwidth=148mm,paperheight=210mm]{geometry}}
 

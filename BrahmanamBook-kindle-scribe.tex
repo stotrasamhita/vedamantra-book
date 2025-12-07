@@ -8,6 +8,8 @@
 \newbool{print}
 \setbool{kindle}{true}
 \setbool{print}{false}
+\newbool{aranyakabook}
+\setbool{aranyakabook}{false} % Will suppress brahmana counts etc. if true
 \ifbool{kindle}{\usepackage[paperwidth=140mm,paperheight=185mm,left=3mm,right=3mm,top=9mm,bottom=9mm]{geometry}
 \addtolength{\headsep}{-8mm}
 \addtolength{\footskip}{-4mm}
@@ -44,6 +46,16 @@
 \input{brahmanas}
 \newpage\mbox{}
 \clearemptydoublepage
+\renewcommand{\prashnaend}[2]{{
+\begin{center}
+#1\\॥#2
+\par आरण्यके आदितः दशिन्यः—\devanumber{\arabic{panchadiKanda}} \hspace{4ex} ब्राह्मणे आदितः दशिन्यः—\devanumber{\arabic{panchadiAdi}}
+
+\closesectionlink
+
+\end{center}}%
+}
+\setcounter{panchadiKanda}{0}
 \chapt{तैत्तिरीय आरण्यकम्}
 \input{"aranyakas/ArunaPrashnah.tex"}\clearpage
 \input{"aranyakas/SahaVai.tex"}\clearpage
@@ -55,6 +67,16 @@
 \input{"aranyakas/Mahanarayanopanishat.tex"}\clearpage
 \newpage\mbox{}
 \clearemptydoublepage
+\setcounter{panchadiKanda}{0}
+\renewcommand{\prashnaend}[2]{{
+\begin{center}
+#1\\॥#2
+\par काठके आदितः दशिन्यः—\devanumber{\arabic{panchadiKanda}} \hspace{4ex} ब्राह्मणे आदितः दशिन्यः—\devanumber{\arabic{panchadiAdi}}
+
+\closesectionlink
+
+\end{center}}%
+}
 \input{"aranyakas/Kathaka.tex"}
 %\mbox{}\clearemptydoublepage
 \end{document}
