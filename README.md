@@ -133,6 +133,30 @@ sanskritweb.de.
 
 For personal use only — not for commercial printing or distribution.
 
+## 📑 Index
+
+**Jump to:** [The four books](#the-four-books) · [Format suffixes](#the-format-suffixes) · [Folder layout](#folder-layout) · [Building from source](#building-from-source) · [Colophon](#colophon)
+
+**All release PDFs — primary edition of each book:**
+
+| Book | PDF |
+|---|---|
+| Mantras | [📄 vedamantrabook.pdf](https://github.com/stotrasamhita/vedamantra-book/blob/master/vedamantrabook.pdf) |
+| Aranyakam | [📄 AraNyakabook-print.pdf](https://github.com/stotrasamhita/vedamantra-book/blob/master/AraNyakabook-print.pdf) |
+| Brahmanam | [📄 BrahmanamBook-print.pdf](https://github.com/stotrasamhita/vedamantra-book/blob/master/BrahmanamBook-print.pdf) |
+| Samhita | [📄 SamhitaBook-kindle.pdf](https://github.com/stotrasamhita/vedamantra-book/blob/master/SamhitaBook-kindle.pdf) |
+
+Every individual section as its own PDF, by book and format:
+
+| Book | Default | Kindle | Kindle Scribe |
+|---|---|---|---|
+| Aranyakam (10 sections) | [aranyakas-pdf/](aranyakas-pdf/README.md) | [aranyakas-kindle-pdf/](aranyakas-kindle-pdf/README.md) | [aranyakas-kindle-scribe-pdf/](aranyakas-kindle-scribe-pdf/README.md) |
+| Brahmanam / Ashtakas (30 sections) | [ashtakas-pdf/](ashtakas-pdf/README.md) | [ashtakas-kindle-pdf/](ashtakas-kindle-pdf/README.md) | [ashtakas-kindle-scribe-pdf/](ashtakas-kindle-scribe-pdf/README.md) |
+| Samhita / Kandas (52 sections) | *(none yet)* | [kandas-kindle-pdf/](kandas-kindle-pdf/README.md) | [kandas-kindle-scribe-pdf/](kandas-kindle-scribe-pdf/README.md) |
+| Mantras (47 sections) | [mantras-pdf/](mantras-pdf/README.md) | [mantras-kindle-pdf/](mantras-kindle-pdf/README.md) | [mantras-kindle-scribe-pdf/](mantras-kindle-scribe-pdf/README.md) |
+
+**Read it online, in multiple scripts:** not yet published — the [stotrasamhita.github.io](https://github.com/stotrasamhita/stotrasamhita.github.io) site currently has no Hugo section for this corpus (unlike `stotra-sangrahah`, `puja-vidhanam`, `gita`, `namavali-manjari`, and `Mahabharatam`, which do).
+
 ---
 
 *The README.md files on this repo were generated and beautified with Claude.*
