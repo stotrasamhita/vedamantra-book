@@ -18,10 +18,10 @@ also <http://stotrasamhita.github.io/about/>.
 
 | Book (root file prefix) | Content | Source folder | Read it |
 |---|---|---|---|
-| `vedamantrabook` | **Mantras** — a standalone collection of suktas, nyasas and mantras commonly used in daily worship (Purusha Suktam, Sri Suktam, Rudra Prashna/Chamakam, Mantra Pushpam, Sandhyavandanam, etc.) | `mantras/` | [`vedamantrabook.pdf`](https://github.com/stotrasamhita/vedamantra-book/blob/master/vedamantrabook.pdf) |
-| `AraNyakabook` | **Aranyakam** — the Taittiriya Aranyaka (its ten Prashnas, including the Taittiriya and Mahanarayana Upanishads) plus the Kathaka portion | `aranyakas/` | [`AraNyakabook-print.pdf`](https://github.com/stotrasamhita/vedamantra-book/blob/master/AraNyakabook-print.pdf) |
-| `BrahmanamBook` | **Brahmanam** — the Taittiriya Brahmana (all eight Ashtakas), with the Aranyaka appended at the end | `ashtakas/` (+ `aranyakas/`) | [`BrahmanamBook-print.pdf`](https://github.com/stotrasamhita/vedamantra-book/blob/master/BrahmanamBook-print.pdf) |
-| `SamhitaBook` | **Samhita** — the Taittiriya Samhita (all seven Kandas) | `kandas/` | [`SamhitaBook-kindle.pdf`](https://github.com/stotrasamhita/vedamantra-book/blob/master/SamhitaBook-kindle.pdf) (no `-print` edition exists yet — see the format table below) |
+| `vedamantrabook` | **Mantras** — a standalone collection of suktas, nyasas and mantras commonly used in daily worship (Purusha Suktam, Sri Suktam, Rudra Prashna/Chamakam, Mantra Pushpam, Sandhyavandanam, etc.) | `mantras/` | [📄 `vedamantrabook.pdf`](https://github.com/stotrasamhita/vedamantra-book/blob/master/vedamantrabook.pdf) |
+| `AraNyakabook` | **Aranyakam** — the Taittiriya Aranyaka (its ten Prashnas, including the Taittiriya and Mahanarayana Upanishads) plus the Kathaka portion | `aranyakas/` | [📄 `AraNyakabook-print.pdf`](https://github.com/stotrasamhita/vedamantra-book/blob/master/AraNyakabook-print.pdf) |
+| `BrahmanamBook` | **Brahmanam** — the Taittiriya Brahmana (all eight Ashtakas), with the Aranyaka appended at the end | `ashtakas/` (+ `aranyakas/`) | [📄 `BrahmanamBook-print.pdf`](https://github.com/stotrasamhita/vedamantra-book/blob/master/BrahmanamBook-print.pdf) |
+| `SamhitaBook` | **Samhita** — the Taittiriya Samhita (all seven Kandas) | `kandas/` | [📄 `SamhitaBook-kindle.pdf`](https://github.com/stotrasamhita/vedamantra-book/blob/master/SamhitaBook-kindle.pdf) (no `-print` edition exists yet — see the format table below) |
 
 Each book's master `.tex` file at the root (e.g. `AraNyakabook-print.tex`)
 `\input`s the corresponding folder's content; the folder itself holds the
