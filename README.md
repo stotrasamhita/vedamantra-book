@@ -132,3 +132,7 @@ on an edition by Subramania Sarma, shared via Ulrich Stiehl's
 sanskritweb.de.
 
 For personal use only — not for commercial printing or distribution.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

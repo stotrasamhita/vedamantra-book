@@ -24,3 +24,7 @@ Pre-rendered, single-section PDFs live in the sibling `kandas-kindle-pdf/`
 and `kandas-kindle-scribe-pdf/` folders (there is currently no plain
 `kandas-pdf/`) — see the root README's format table for what each suffix
 means.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

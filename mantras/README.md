@@ -66,3 +66,7 @@ there, which is not the same as this table's order.
 Pre-rendered, single-section PDFs live in the sibling `mantras-pdf/`,
 `mantras-kindle-pdf/`, and `mantras-kindle-scribe-pdf/` folders — see the
 root README's format table for what each suffix means.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

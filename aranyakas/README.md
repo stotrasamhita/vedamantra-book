@@ -29,3 +29,7 @@ Pre-rendered, single-section PDFs of this same content live in the sibling
 `aranyakas-pdf/`, `aranyakas-kindle-pdf/`, and `aranyakas-kindle-scribe-pdf/`
 folders (one small PDF per file above, per format) — see the root README's
 format table for what each suffix means.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*

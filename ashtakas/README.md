@@ -22,3 +22,7 @@ is the source used by `BrahmanamBook-*.tex` at the repo root — see the root
 Pre-rendered, single-section PDFs live in the sibling `ashtakas-pdf/`,
 `ashtakas-kindle-pdf/`, and `ashtakas-kindle-scribe-pdf/` folders — see the
 root README's format table for what each suffix means.
+
+---
+
+*The README.md files on this repo were generated and beautified with Claude.*
